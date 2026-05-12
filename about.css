@@ -1,0 +1,124 @@
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f7f4;
+            color:#333;
+        }
+
+        header{
+            background:#1b5e20;
+            padding:15px 8%;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            position:sticky;
+            top:0;
+            z-index:1000;
+        }
+
+        .logo{
+            color:white;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        nav ul{
+            display:flex;
+            list-style:none;
+            gap:25px;
+        }
+
+        nav ul li a{
+            text-decoration:none;
+            color:white;
+            font-size:16px;
+            transition:0.3s;
+        }
+
+        nav ul li a:hover{
+            color:#c8e6c9;
+        }
+
+        .section{
+            padding:60px 8%;
+        }
+
+        .section-title{
+            text-align:center;
+            font-size:40px;
+            color:#1b5e20;
+            margin-bottom:50px;
+        }
+
+        .about-content{
+            display:flex;
+            align-items:center;
+            gap:40px;
+            background:white;
+            padding:40px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .about-content img{
+            width:50%;
+            border-radius:12px;
+        }
+
+        .about-content h3{
+            font-size:32px;
+            margin-bottom:20px;
+            color:#2e7d32;
+        }
+
+        .about-content p{
+            font-size:18px;
+            line-height:1.8;
+        }
+
+        footer{
+            background:#1b5e20;
+            color:white;
+            text-align:center;
+            padding:25px 10px;
+            margin-top:50px;
+        }
+
+        footer p{
+            margin:8px 0;
+        }
+
+        @media(max-width:768px){
+
+            header{
+                flex-direction:column;
+                gap:15px;
+            }
+
+            nav ul{
+                flex-wrap:wrap;
+                justify-content:center;
+            }
+
+            .about-content{
+                flex-direction:column;
+                text-align:center;
+            }
+
+            .about-content img{
+                width:100%;
+            }
+
+            .section-title{
+                font-size:32px;
+            }
+
+            .about-content h3{
+                font-size:26px;
+            }
+        }
