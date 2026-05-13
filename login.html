@@ -7,129 +7,37 @@
     <link rel="stylesheet" href="./login.css">
 
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body{
-            background: #f4f4f4;
-        }
-
-        header{
-            background: #2c3e50;
-            color: white;
-            padding: 15px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo{
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        nav ul{
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav ul li a{
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        nav ul li a:hover{
-            color: #f1c40f;
-        }
-
-        .auth-section{
-            width: 350px;
-            margin: 80px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .section-title{
-            text-align: center;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
-
-        .auth-form{
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .auth-form input{
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .auth-form button{
-            padding: 12px;
-            border: none;
-            background: #2c3e50;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-
-        .auth-form button:hover{
-            background: #34495e;
-        }
-
-        footer{
-            background: #2c3e50;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 100px;
-        }
-
-        @media(max-width:768px){
-            header{
-                flex-direction: column;
-                gap: 10px;
-            }
-
-            nav ul{
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-
-            .auth-section{
-                width: 90%;
-            }
-        }
+    
     </style>
 </head>
 
 <body>
 
     <header>
-        <div class="logo">MyWebsite</div>
+  <div class="logo">EcoPack</div>
+ 
+<nav>
 
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="dropdown">
+    <a href="#home" class="drop-btn">Home ▾</a>
+
+    <div class="dropdown-content">
+      <a href="#home">Home 1</a>
+      <a href="#home2">Home 2</a>
+    </div>
+  </div>
+
+  <a href="#about"><a href="about.html">about</a>
+  <a href="#services"><a href="services.html">Services</a>
+  <a href="#pricing"><a href="pricing.html">pricing</a>
+  <a href="#blog"><a href="blog.html">blog</a>
+  <a href="#contact"><a href="contact.html">contact</a>
+  <a href="#dashboard"><a href="dashboard.html">dashboard</a>
+  <a href="#login"><a href="./login.html">Login</a></a>
+  <a href="#signup"><a href="./signup.html">signup</a></a>
+
+</nav>
+</header>
 
     <section class="section auth-section" id="login">
 

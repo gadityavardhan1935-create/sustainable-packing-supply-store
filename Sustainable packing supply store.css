@@ -9,6 +9,10 @@ body{
   background:#f4fff4;
   color:#333;
   line-height:1.6;
+  padding-bottom: 80px; /* Space for fixed footer */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 html{
@@ -21,6 +25,7 @@ header{
   padding:22px 7%;
 
   display:flex;
+  justify-content: space-between;
   align-items:center;
 }
 
@@ -37,7 +42,7 @@ nav{
   display:flex;
   justify-content:center;
   align-items:center;
-  gap:32px;
+  gap:10px;
 }
 
 
@@ -502,6 +507,7 @@ footer{
   color:rgba(67, 29, 156, 0.281);
   text-align:center;
   padding:25px;
+  margin-top: auto;
 }
 
 @media(max-width:1024px){

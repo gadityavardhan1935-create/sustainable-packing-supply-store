@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoPack Services</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GreenServe</title>
+
   <link rel="stylesheet" href="services.css">
-  <style>
 
-  </style>
-
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
   <header>
 
-    <div class="logo">EcoPack</div>
+    <div class="logo">GreenServe</div>
 
     <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+
+      <a href="#home">Home</a>
+
+      <a href="#about">About</a>
+
+      <!-- Dropdown -->
+      <div class="dropdown">
+
+        <a href="#" class="drop-btn">
+          Services
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+
+        <div class="dropdown-content">
+          <a href="#">Custom Packaging</a>
+          <a href="#">Bulk Supply</a>
+          <a href="#">Eco Consulting</a>
+          <a href="#">Recyclable Materials</a>
+        </div>
+
+      </div>
+
+      <a href="#blog">Blog</a>
+
+      <a href="#contact">Contact</a>
+
     </nav>
 
   </header>
 
-  <section class="section" id="services">
-
-    <h2 class="section-title">Our Services</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>Custom Packaging</h3>
-        <p>Customized eco-friendly packaging designs.</p>
-      </div>
-
-      <div class="card">
-        <h3>Bulk Supply</h3>
-        <p>Large-scale sustainable packaging distribution.</p>
-      </div>
-
-      <div class="card">
-        <h3>Packaging Consulting</h3>
-        <p>Expert guidance for green packaging strategies.</p>
-      </div>
-
+  <main class="section services-section">
+    <div class="services-intro">
+      <h1>Our Services</h1>
+      <p>Eco-friendly packaging solutions designed for sustainability, efficiency, and modern business needs.</p>
     </div>
 
-  </section>
+    <div class="service-cards">
+      <div class="service-card">
+        <h3>Custom Packaging</h3>
+        <p>Tailored eco-friendly packaging solutions for every product type and shipment size.</p>
+      </div>
+      <div class="service-card">
+        <h3>Bulk Supply</h3>
+        <p>Reliable bulk deliveries of recyclable and compostable packaging materials.</p>
+      </div>
+      <div class="service-card">
+        <h3>Eco Consulting</h3>
+        <p>Expert guidance on sustainable sourcing, waste reduction, and green operations.</p>
+      </div>
+    </div>
+  </main>
 
   <footer>
-
-    <p>© 2026 EcoPack</p>
-
-    <p>Creating Sustainable Packaging Solutions for a Greener Future</p>
-
+    <p>© 2026 MyWebsite</p>
   </footer>
 
 </body>

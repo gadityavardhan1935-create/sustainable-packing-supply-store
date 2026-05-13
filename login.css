@@ -1,145 +1,160 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
 }
 
 body{
-    background: #f4f4f4;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  background:#f4fff4;
+  color:#333;
+  line-height:1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html{
+  scroll-behavior:smooth;
 }
 
 header{
-    background: #2c3e50;
-    color: white;
-    padding: 15px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  width:100%;
+  background:#2a1b5e;
+  padding:22px 7%;
+
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
 }
 
 .logo{
-    font-size: 24px;
-    font-weight: bold;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover{
-    color: #f1c40f;
-}
-
-.auth-section{
-    width: 350px;
-    margin: 80px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  color:#fff;
+  font-size:42px;
+  font-weight:700;
 }
 
 
-.section-title{
-    text-align: center;
-    margin-bottom: 20px;
-    color: #2c3e50;
+nav{
+  flex:1;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:10px;
 }
 
-.auth-form{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+
+nav a{
+  color:#fff;
+  text-decoration:none;
+  font-size:18px;
+  font-weight:500;
+  transition:0.3s ease;
 }
 
-.auth-form input{
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    outline: none;
-    font-size: 15px;
+nav a:hover{
+  color:#c8e6c9;
 }
 
-.auth-form input:focus{
-    border-color: #2c3e50;
+
+.dropdown{
+  position:relative;
 }
 
-.auth-form button{
-    padding: 12px;
-    border: none;
-    background: #2c3e50;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
+.drop-btn{
+  display:flex;
+  align-items:center;
+  gap:5px;
 }
 
-.auth-form button:hover{
-    background: #34495e;
+
+.dropdown-content{
+  position:absolute;
+  top:38px;
+  left:0;
+
+  background:#fff;
+  min-width:180px;
+
+  border-radius:12px;
+  overflow:hidden;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.15);
+
+  opacity:0;
+  visibility:hidden;
+  transform:translateY(10px);
+
+  transition:0.3s ease;
 }
+
+.dropdown-content a{
+  display:block;
+  color:#1b5e20;
+  padding:14px 18px;
+  font-size:15px;
+}
+
+.dropdown-content a:hover{
+  background:#f3f7f3;
+  padding-left:24px;
+}
+
+.dropdown:hover .dropdown-content{
+  opacity:1;
+  visibility:visible;
+  transform:translateY(0);
+}
+
 
 footer{
-    background: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: auto;
+  background:#4c2b9b49;
+  color:rgba(67, 29, 156, 0.281);
+  text-align:center;
+  padding:25px;
+  margin-top: auto;
 }
 
-
-@media(max-width: 768px){
-
-    header{
-        flex-direction: column;
-        gap: 10px;
-        text-align: center;
-    }
-
-    nav ul{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .auth-section{
-        width: 90%;
-        margin: 50px auto;
-    }
+.auth-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  padding: 20px;
 }
 
-@media(max-width: 480px){
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2a1b5e;
+}
 
-    .logo{
-        font-size: 20px;
-    }
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 15px;
+}
 
-    nav ul{
-        gap: 10px;
-    }
+.auth-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
 
-    nav ul li a{
-        font-size: 14px;
-    }
+.auth-form button {
+  padding: 10px;
+  background: #2a1b5e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
 
-    .auth-section{
-        padding: 20px;
-    }
-
-    .auth-form input,
-    .auth-form button{
-        font-size: 14px;
-    }
+.auth-form button:hover {
+  background: #1b5e20;
 }
