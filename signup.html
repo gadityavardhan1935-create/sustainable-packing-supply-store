@@ -1,68 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoPack Signup</title>
-     <link rel="stylesheet" href="signup.css">
-    <style>
-
-
-    </style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="signup.css">
 </head>
-
 <body>
+<!-- =========================
+     SIGNUP HEADER SECTION
+========================= -->
 
-    <header>
-  <div class="logo">EcoPack</div>
- 
-<nav>
+<header class="signup-header">
 
-  <div class="dropdown">
-    <a href="#home" class="drop-btn">Home ▾</a>
+  <!-- NAVBAR -->
+  <nav class="navbar">
 
-    <div class="dropdown-content">
-      <a href="#home">Home 1</a>
-      <a href="#home2">Home 2</a>
+    <!-- LOGO -->
+    <div class="logo">
+      EcoPack
     </div>
+
+    <!-- NAV LINKS -->
+    <ul class="nav-links" id="navLinks">
+
+      <li><a href="#home">Home</a></li>
+
+      <!-- SIGNUP DROPDOWN -->
+      <li class="dropdown">
+
+        <a href="#">
+          Signup ▼
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <li><a href="#register">Create Account</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#support">Support</a></li>
+
+        </ul>
+
+      </li>
+
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+    <!-- RIGHT SIDE -->
+    <div class="nav-right">
+
+      <!-- DARK MODE -->
+      <button id="themeToggle" class="theme-btn">
+        🌙
+      </button>
+
+      <!-- MOBILE MENU -->
+      <div class="menu-toggle" id="menuToggle">
+        ☰
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- HEADER CONTENT -->
+  <div class="signup-header-content">
+
+    <h1>Create Your EcoPack Account</h1>
+
+    <p>
+      Join EcoPack today and explore eco-friendly
+      packaging solutions for your sustainable business.
+    </p>
+
+    <a href="#signup" class="header-btn">
+      Get Started
+    </a>
+
   </div>
 
-  <a href="#about"><a href="about.html">about</a>
-  <a href="#services"><a href="services.html">Services</a>
-  <a href="#pricing"><a href="pricing.html">pricing</a>
-  <a href="#blog"><a href="blog.html">blog</a>
-  <a href="#contact"><a href="contact.html">contact</a>
-  <a href="#dashboard"><a href="dashboard.html">dashboard</a>
-  <a href="#login"><a href="./login.html">Login</a></a>
-  <a href="#signup"><a href="./signup.html">signup</a></a>
-
-</nav>
 </header>
 
-    <section class="section auth-section" id="signup">
+<!-- =========================
+     SIGNUP SECTION
+========================= -->
 
-        <h2 class="section-title">Signup</h2>
+<section class="signup-section" id="signup">
 
-        <form class="auth-form">
+  <div class="signup-container">
 
-            <input type="text" placeholder="Full Name">
+    <!-- SIGNUP FORM -->
+    <div class="signup-box">
 
-            <input type="email" placeholder="Email Address">
+      <h2>Create Account</h2>
 
-            <input type="password" placeholder="Password">
+      <form>
 
-            <button type="submit">Create Account</button>
+        <input type="text" placeholder="Full Name" required>
 
-        </form>
+        <input type="email" placeholder="Email Address" required>
 
-    </section>
+        <input type="password" placeholder="Create Password" required>
 
-    <footer>
+        <input type="password" placeholder="Confirm Password" required>
 
-        <p>© 2026 MyWebsite</p>
+        <button type="submit" class="signup-btn">
+          Signup
+        </button>
 
-    </footer>
+      </form>
 
+      <p class="signup-text">
+        Already have an account?
+        <a href="#">Login</a>
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     FOOTER SECTION
+========================= -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- COMPANY -->
+    <div class="footer-box">
+
+      <h2>EcoPack</h2>
+
+      <p>
+        EcoPack offers sustainable and eco-friendly
+        packaging products for businesses worldwide.
+      </p>
+
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-box">
+
+      <h3>Quick Links</h3>
+
+      <ul>
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#signup">Signup</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <!-- FEATURES -->
+    <div class="footer-box">
+
+      <h3>Signup Benefits</h3>
+
+      <ul>
+
+        <li>Eco Products</li>
+        <li>Order Tracking</li>
+        <li>Fast Delivery</li>
+        <li>Customer Support</li>
+        <li>Exclusive Offers</li>
+
+      </ul>
+
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-box">
+
+      <h3>Follow Us</h3>
+
+      <div class="social-icons">
+
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+        <a href="#">🐦</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 EcoPack | Sustainable Packing Supply Store | All Rights Reserved
+    </p>
+
+  </div>
+
+</footer>
 </body>
 </html>

@@ -1,63 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="./login.css">
-
-    <style>
-    
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="login.css">
 </head>
-
 <body>
+ <!-- =========================
+     LOGIN HEADER SECTION
+========================= -->
 
-    <header>
-  <div class="logo">EcoPack</div>
- 
-<nav>
+<header class="login-header">
 
-  <div class="dropdown">
-    <a href="#home" class="drop-btn">Home ▾</a>
+  <!-- NAVBAR -->
+  <nav class="navbar">
 
-    <div class="dropdown-content">
-      <a href="#home">Home 1</a>
-      <a href="#home2">Home 2</a>
+    <!-- LOGO -->
+    <div class="logo">
+      EcoPack
     </div>
+
+    <!-- NAV LINKS -->
+    <ul class="nav-links" id="navLinks">
+
+      <li><a href="#home">Home</a></li>
+
+      <li class="dropdown">
+
+        <a href="#">
+          Login ▼
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <li><a href="#signin">Sign In</a></li>
+          <li><a href="#register">Register</a></li>
+          <li><a href="#support">Support</a></li>
+
+        </ul>
+
+      </li>
+
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+    <!-- RIGHT SIDE -->
+    <div class="nav-right">
+
+      <!-- DARK MODE -->
+      <button id="themeToggle" class="theme-btn">
+        🌙
+      </button>
+
+      <!-- MOBILE MENU -->
+      <div class="menu-toggle" id="menuToggle">
+        ☰
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- HEADER CONTENT -->
+  <div class="login-header-content">
+
+    <h1>Welcome Back</h1>
+
+    <p>
+      Login to access your EcoPack dashboard, orders,
+      and sustainable packaging solutions.
+    </p>
+
+    <a href="#login" class="header-btn">
+      Login Now
+    </a>
+
   </div>
 
-  <a href="#about"><a href="about.html">about</a>
-  <a href="#services"><a href="services.html">Services</a>
-  <a href="#pricing"><a href="pricing.html">pricing</a>
-  <a href="#blog"><a href="blog.html">blog</a>
-  <a href="#contact"><a href="contact.html">contact</a>
-  <a href="#dashboard"><a href="dashboard.html">dashboard</a>
-  <a href="#login"><a href="./login.html">Login</a></a>
-  <a href="#signup"><a href="./signup.html">signup</a></a>
-
-</nav>
 </header>
 
-    <section class="section auth-section" id="login">
+<!-- =========================
+     LOGIN SECTION
+========================= -->
 
-        <h2 class="section-title">Login</h2>
+<section class="login-section" id="login">
 
-        <form class="auth-form">
+  <div class="login-container">
 
-            <input type="email" placeholder="Enter Email" required>
+    <!-- LOGIN FORM -->
+    <div class="login-box">
 
-            <input type="password" placeholder="Enter Password" required>
+      <h2>User Login</h2>
 
-            <button type="submit">Login</button>
+      <form>
 
-        </form>
+        <input type="email" placeholder="Enter Your Email" required>
 
-    </section>
+        <input type="password" placeholder="Enter Password" required>
 
-    <footer>
-        <p>© 2026 MyWebsite</p>
-    </footer>
+        <button type="submit" class="login-btn">
+          Login
+        </button>
 
+      </form>
+
+      <p class="login-text">
+        Don't have an account?
+        <a href="#">Signup</a>
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     FOOTER SECTION
+========================= -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- COMPANY -->
+    <div class="footer-box">
+
+      <h2>EcoPack</h2>
+
+      <p>
+        EcoPack delivers eco-friendly packaging solutions
+        for businesses and customers worldwide.
+      </p>
+
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-box">
+
+      <h3>Quick Links</h3>
+
+      <ul>
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-box">
+
+      <h3>Services</h3>
+
+      <ul>
+
+        <li>Eco Packaging</li>
+        <li>Reusable Products</li>
+        <li>Paper Bags</li>
+        <li>Fast Delivery</li>
+        <li>Custom Branding</li>
+
+      </ul>
+
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-box">
+
+      <h3>Follow Us</h3>
+
+      <div class="social-icons">
+
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+        <a href="#">🐦</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 EcoPack | Sustainable Packing Supply Store | All Rights Reserved
+    </p>
+
+  </div>
+
+</footer> 
 </body>
 </html>

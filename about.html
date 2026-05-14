@@ -3,76 +3,304 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoPack</title>
-     <link rel="stylesheet" href="./about.css">
-    <style>
-
-    </style>
+    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
 </head>
-
 <body>
+<!-- ABOUT PAGE HEADER SECTION -->
 
-    <header>
-  <div class="logo">EcoPack</div>
- 
-<nav>
+<header class="about-header">
 
-  <div class="dropdown">
-    <a href="#home" class="drop-btn">Home ▾</a>
+  <!-- NAVBAR -->
+  <nav class="navbar">
 
-    <div class="dropdown-content">
-      <a href="#home">Home 1</a>
-      <a href="#home2">Home 2</a>
+    <div class="logo">
+      EcoPack
     </div>
+
+    <ul class="nav-links">
+
+      <li><a href="#home">Home</a></li>
+
+      <li class="dropdown">
+
+        <a href="#">
+          About ▼
+        </a>
+
+        <ul class="dropdown-menu">
+          <li><a href="#company">Company</a></li>
+          <li><a href="#mission">Mission</a></li>
+          <li><a href="#team">Our Team</a></li>
+        </ul>
+
+      </li>
+
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+    <!-- DARK MODE BUTTON -->
+    <button id="themeToggle" class="theme-btn">
+      🌙
+    </button>
+
+    <!-- MOBILE MENU -->
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+
+  </nav>
+
+  <!-- HEADER CONTENT -->
+  <div class="about-header-content">
+
+    <h1>About EcoPack</h1>
+
+    <p>
+      Sustainable packing solutions designed to protect the environment
+      and create a greener future.
+    </p>
+
+    <a href="#about" class="header-btn">
+      Learn More
+    </a>
+
   </div>
 
-  <a href="#about"><a href="about.html">about</a>
-  <a href="#services"><a href="services.html">Services</a>
-  <a href="#pricing"><a href="pricing.html">pricing</a>
-  <a href="#blog"><a href="blog.html">blog</a>
-  <a href="#contact"><a href="contact.html">contact</a>
-  <a href="#dashboard"><a href="dashboard.html">dashboard</a>
-  <a href="#login"><a href="./login.html">Login</a></a>
-  <a href="#signup"><a href="./signup.html">signup</a></a>
-
-</nav>
 </header>
+ <!-- =========================
+     NAVBAR SECTION
+========================= -->
 
-    <section class="section" id="about">
+<nav class="navbar">
 
-        <h2 class="section-title">About Us</h2>
+  <!-- LOGO -->
+  <div class="logo">
+    EcoPack
+  </div>
 
-        <div class="about-content">
+  <!-- NAVIGATION LINKS -->
+  <ul class="nav-links" id="navLinks">
 
-            <img src="https://i.pinimg.com/736x/17/04/b4/1704b4de2241241a0273f1c087482ca9.jpg" alt="About" height="50%" width="50%">
+    <li>
+      <a href="#home">Home</a>
+    </li>
 
-            <div>
+    <!-- ABOUT DROPDOWN -->
+    <li class="dropdown">
 
-                <h3>Leading Sustainable Packaging Company</h3>
+      <a href="#about">
+        About ▼
+      </a>
 
-                <p>
-                    EcoPack provides sustainable and eco-friendly packaging products
-                    to businesses and customers worldwide.
-                </p>
+      <ul class="dropdown-menu">
 
-                <br>
+        <li>
+          <a href="#company">Company</a>
+        </li>
 
-                <p>
-                    Our mission is to reduce environmental pollution using reusable,
-                    recyclable and biodegradable materials.
-                </p>
+        <li>
+          <a href="#mission">Mission</a>
+        </li>
 
-            </div>
+        <li>
+          <a href="#vision">Vision</a>
+        </li>
 
+      </ul>
+
+    </li>
+
+    <li>
+      <a href="#services">Services</a>
+    </li>
+
+    <li>
+      <a href="#pricing">Pricing</a>
+    </li>
+
+    <li>
+      <a href="#blog">Blog</a>
+    </li>
+
+    <li>
+      <a href="#contact">Contact</a>
+    </li>
+
+  </ul>
+
+  <!-- RIGHT SIDE -->
+  <div class="nav-right">
+
+    <!-- DARK MODE BUTTON -->
+    <button id="themeToggle" class="theme-btn">
+      🌙
+    </button>
+
+    <!-- MOBILE MENU ICON -->
+    <div class="menu-toggle" id="menuToggle">
+      ☰
+    </div>
+
+  </div>
+
+</nav>   
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+
+  <div class="section-title">
+    <h2>About Us</h2>
+    <p>
+      Delivering sustainable and eco-friendly packaging solutions for a greener future.
+    </p>
+  </div>
+
+  <div class="about-container">
+
+    <!-- IMAGE -->
+    <div class="about-image">
+      <img 
+        src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" 
+        alt="Sustainable Packaging">
+    </div>
+
+    <!-- CONTENT -->
+    <div class="about-content">
+
+      <h3>Eco-Friendly Packaging Solutions</h3>
+
+      <p>
+        EcoPack is a sustainable packing supply store focused on reducing
+        plastic waste by providing recyclable, reusable, and biodegradable
+        packaging products for businesses and individuals.
+      </p>
+
+      <p>
+        Our mission is to protect the environment through innovative and
+        affordable green packaging solutions that support sustainability
+        and eco-conscious living.
+      </p>
+
+      <!-- FEATURES -->
+      <div class="about-features">
+
+        <div class="feature-card">
+          <i class="fa-solid fa-recycle"></i>
+          <h4>100% Recyclable</h4>
+          <p>Eco-friendly materials that help reduce pollution.</p>
         </div>
 
-    </section>
+        <div class="feature-card">
+          <i class="fa-solid fa-leaf"></i>
+          <h4>Biodegradable</h4>
+          <p>Safe packaging products made from natural resources.</p>
+        </div>
 
-    <footer>
+        <div class="feature-card">
+          <i class="fa-solid fa-earth-asia"></i>
+          <h4>Global Impact</h4>
+          <p>Supporting businesses in building a greener future.</p>
+        </div>
 
-        <p>© 2026 MyWebsite</p>
+      </div>
 
-    </footer>
+      <button class="about-btn">Learn More</button>
 
+    </div>
+  </div>
+</section>
+ <!-- =========================
+     FOOTER SECTION
+========================= -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- COMPANY INFO -->
+    <div class="footer-box">
+
+      <h2>EcoPack</h2>
+
+      <p>
+        EcoPack provides sustainable and eco-friendly packing solutions
+        for businesses and individuals. Our mission is to reduce plastic
+        waste and create a greener future.
+      </p>
+
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-box">
+
+      <h3>Quick Links</h3>
+
+      <ul>
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-box">
+
+      <h3>Our Services</h3>
+
+      <ul>
+
+        <li>Eco Packaging</li>
+        <li>Paper Bags</li>
+        <li>Custom Branding</li>
+        <li>Reusable Products</li>
+        <li>Fast Delivery</li>
+
+      </ul>
+
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-box">
+
+      <h3>Contact Info</h3>
+
+      <p>Email: support@ecopack.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Location: India</p>
+
+      <!-- SOCIAL ICONS -->
+      <div class="social-icons">
+
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+        <a href="#">🐦</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 EcoPack | Sustainable Packing Supply Store | All Rights Reserved
+    </p>
+
+  </div>
+
+</footer>   
 </body>
 </html>

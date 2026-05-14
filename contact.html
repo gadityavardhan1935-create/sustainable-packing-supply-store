@@ -1,166 +1,230 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- 
-<title>Sustainable Packaging | Contact</title>
- 
-<link rel="stylesheet" href="contact.css">
- 
-<!-- Bootstrap Icons -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
- 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="contact.css">
 </head>
- 
 <body>
-  <section>
-  <header>
-  <div class="logo">EcoPack</div>
- 
-<nav>
+<!-- =========================
+     CONTACT HEADER SECTION
+========================= -->
 
-  <div class="dropdown">
-    <a href="#home" class="drop-btn">Home ▾</a>
+<header class="contact-header">
 
-    <div class="dropdown-content">
-      <a href="#home">Home 1</a>
-      <a href="#home2">Home 2</a>
+  <!-- NAVBAR -->
+  <nav class="navbar">
+
+    <!-- LOGO -->
+    <div class="logo">
+      EcoPack
     </div>
+
+    <!-- NAV LINKS -->
+    <ul class="nav-links" id="navLinks">
+
+      <li><a href="#home">Home</a></li>
+
+      <li class="dropdown">
+
+        <a href="#">
+          Contact ▼
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <li><a href="#support">Support</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#help">Help Center</a></li>
+
+        </ul>
+
+      </li>
+
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#blog">Blog</a></li>
+
+    </ul>
+
+    <!-- RIGHT SIDE -->
+    <div class="nav-right">
+
+      <!-- DARK MODE -->
+      <button id="themeToggle" class="theme-btn">
+        🌙
+      </button>
+
+      <!-- MOBILE MENU -->
+      <div class="menu-toggle" id="menuToggle">
+        ☰
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- HEADER CONTENT -->
+  <div class="contact-header-content">
+
+    <h1>Contact EcoPack</h1>
+
+    <p>
+      Reach out to us for sustainable packaging solutions,
+      support, and eco-friendly business services.
+    </p>
+
+    <a href="#contact" class="header-btn">
+      Contact Us
+    </a>
+
   </div>
 
-  <a href="#about"><a href="about.html">about</a>
-  <a href="#services"><a href="services.html">Services</a>
-  <a href="#pricing"><a href="pricing.html">pricing</a>
-  <a href="#blog"><a href="blog.html">blog</a>
-  <a href="#contact"><a href="contact.html">contact</a>
-  <a href="#dashboard"><a href="dashboard.html">dashboard</a>
-  <a href="#login"><a href="./login.html">Login</a></a>
-  <a href="#signup"><a href="./signup.html">signup</a></a>
-
-</nav>
 </header>
- 
- 
- 
-<!-- HERO SECTION -->
- 
-<section class="hero">
- 
-<h1>Contact EcoPack</h1>
- 
-<p>Let’s work together for a sustainable future with eco-friendly packaging.</p>
- 
-</section>
- 
- 
-<!-- CONTACT CARDS -->
- 
-<section class="contact-cards">
- 
-<div class="card">
- 
-<i class="bi bi-geo-alt"></i>
-<h3>Address</h3>
-<p>EcoPack Solutions<br>Bangalore, India</p>
- 
-</div>
- 
- 
-<div class="card">
- 
-<i class="bi bi-envelope"></i>
-<h3>Email</h3>
-<p>support@ecopack.com</p>
- 
-</div>
- 
- 
-<div class="card">
- 
-<i class="bi bi-telephone"></i>
-<h3>Phone</h3>
-<p>+91 98765 43210</p>
- 
-</div>
- 
-</section>
- 
- 
-<!-- CONTACT FORM -->
- 
-<section class="contact-form">
- 
-<h2>Send Us a Message</h2>
- 
-<form>
- 
-<input type="text" placeholder="Your Name" required>
- 
-<input type="email" placeholder="Your Email" required>
- 
-<textarea placeholder="Your Message"></textarea><br>
- 
-<button type="submit">Send Message</button>
- 
-</form>
- 
-</section>
- 
- 
-<!-- SOCIAL MEDIA -->
- 
-<section class="social-section">
- 
-<h2>Follow Us</h2>
- 
-<div class="social">
- 
-<div class="social-card">
-<i class="bi bi-facebook"></i>
-<p>Facebook</p>
-</div>
- 
-<div class="social-card">
-<i class="bi bi-instagram"></i>
-<p>Instagram</p>
-</div>
- 
-<div class="social-card">
-<i class="bi bi-twitter-x"></i>
-<p>Twitter</p>
-</div>
- 
-<div class="social-card">
-<i class="bi bi-linkedin"></i>
-<p>LinkedIn</p>
-</div>
- 
-</div>
- 
-</section>
- 
- 
-<!-- MAP -->
- 
-<section class="map">
- 
-<h2>Our Location</h2>
- 
-<iframe
-src="https://www.google.com/maps?q=Bangalore&output=embed" width="100%" height="1000" 
-style="border:0;">
-</iframe>
- 
-</section>
- 
- 
 
-    <footer>
-        <p>© 2026 MyWebsite</p>
-    </footer>
+<!-- =========================
+     CONTACT SECTION
+========================= -->
 
-</body>
-</html>
+<section class="contact-section" id="contact">
+
+  <div class="section-title">
+
+    <h2>Get In Touch</h2>
+
+    <p>
+      We'd love to hear from you and help your business go green.
+    </p>
+
+  </div>
+
+  <div class="contact-container">
+
+    <!-- CONTACT FORM -->
+    <div class="contact-form">
+
+      <form>
+
+        <input type="text" placeholder="Your Name" required>
+
+        <input type="email" placeholder="Your Email" required>
+
+        <input type="text" placeholder="Subject">
+
+        <textarea rows="6" placeholder="Your Message"></textarea>
+
+        <button type="submit" class="contact-btn">
+          Send Message
+        </button>
+
+      </form>
+
+    </div>
+
+    <!-- CONTACT INFO -->
+    <div class="contact-info">
+
+      <h3>Contact Information</h3>
+
+      <p>📧 support@ecopack.com</p>
+
+      <p>📞 +91 98765 43210</p>
+
+      <p>📍 India</p>
+
+      <p>
+        EcoPack provides sustainable packing supply solutions
+        for eco-friendly businesses and customers worldwide.
+      </p>
+
+    </div>
+
+  </div>
+
 </section>
- 
+
+<!-- =========================
+     FOOTER SECTION
+========================= -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- COMPANY -->
+    <div class="footer-box">
+
+      <h2>EcoPack</h2>
+
+      <p>
+        EcoPack delivers eco-friendly packaging solutions
+        designed to reduce waste and build a sustainable future.
+      </p>
+
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-box">
+
+      <h3>Quick Links</h3>
+
+      <ul>
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-box">
+
+      <h3>Services</h3>
+
+      <ul>
+
+        <li>Eco Packaging</li>
+        <li>Reusable Products</li>
+        <li>Paper Bags</li>
+        <li>Custom Branding</li>
+        <li>Fast Delivery</li>
+
+      </ul>
+
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-box">
+
+      <h3>Follow Us</h3>
+
+      <div class="social-icons">
+
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+        <a href="#">🐦</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 EcoPack | Sustainable Packing Supply Store | All Rights Reserved
+    </p>
+
+  </div>
+
+</footer> 
 </body>
 </html>

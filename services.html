@@ -1,80 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>GreenServe</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <link rel="stylesheet" href="services.css">
-
-  <!-- Font Awesome Icons -->
-  <link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
-
 <body>
+<!-- =========================
+     SERVICES HEADER SECTION
+========================= -->
 
-  <header>
+<header class="services-header">
 
-    <div class="logo">GreenServe</div>
+  <!-- NAVBAR -->
+  <nav class="navbar">
 
-    <nav>
+    <!-- LOGO -->
+    <div class="logo">
+      EcoPack
+    </div>
 
-      <a href="#home">Home</a>
+    <!-- NAV LINKS -->
+    <ul class="nav-links" id="navLinks">
 
-      <a href="#about">About</a>
+      <li><a href="#home">Home</a></li>
 
-      <!-- Dropdown -->
-      <div class="dropdown">
+      <!-- SERVICES DROPDOWN -->
+      <li class="dropdown">
 
-        <a href="#" class="drop-btn">
-          Services
-          <i class="fa-solid fa-chevron-down"></i>
+        <a href="#">
+          Services ▼
         </a>
 
-        <div class="dropdown-content">
-          <a href="#">Custom Packaging</a>
-          <a href="#">Bulk Supply</a>
-          <a href="#">Eco Consulting</a>
-          <a href="#">Recyclable Materials</a>
-        </div>
+        <ul class="dropdown-menu">
 
+          <li><a href="#eco-boxes">Eco Boxes</a></li>
+          <li><a href="#paper-bags">Paper Bags</a></li>
+          <li><a href="#branding">Custom Branding</a></li>
+
+        </ul>
+
+      </li>
+
+      <li><a href="#about">About</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+    <!-- RIGHT SIDE -->
+    <div class="nav-right">
+
+      <!-- DARK MODE -->
+      <button id="themeToggle" class="theme-btn">
+        🌙
+      </button>
+
+      <!-- MOBILE MENU -->
+      <div class="menu-toggle" id="menuToggle">
+        ☰
       </div>
 
-      <a href="#blog">Blog</a>
-
-      <a href="#contact">Contact</a>
-
-    </nav>
-
-  </header>
-
-  <main class="section services-section">
-    <div class="services-intro">
-      <h1>Our Services</h1>
-      <p>Eco-friendly packaging solutions designed for sustainability, efficiency, and modern business needs.</p>
     </div>
 
-    <div class="service-cards">
-      <div class="service-card">
-        <h3>Custom Packaging</h3>
-        <p>Tailored eco-friendly packaging solutions for every product type and shipment size.</p>
+  </nav>
+
+  <!-- HEADER CONTENT -->
+  <div class="services-header-content">
+
+    <h1>Our Eco-Friendly Services</h1>
+
+    <p>
+      Sustainable packaging services designed for
+      businesses and environmentally conscious customers.
+    </p>
+
+    <a href="#services" class="header-btn">
+      Explore Services
+    </a>
+
+  </div>
+
+</header>
+
+<!-- =========================
+     SERVICES SECTION
+========================= -->
+
+<section class="services-section" id="services">
+
+  <div class="section-title">
+
+    <h2>Our Services</h2>
+
+    <p>
+      Smart and sustainable packaging solutions
+      for a greener future.
+    </p>
+
+  </div>
+
+  <div class="services-container">
+
+    <!-- SERVICE 1 -->
+    <div class="service-card" id="eco-boxes">
+
+      <div class="service-icon">
+        📦
       </div>
-      <div class="service-card">
-        <h3>Bulk Supply</h3>
-        <p>Reliable bulk deliveries of recyclable and compostable packaging materials.</p>
-      </div>
-      <div class="service-card">
-        <h3>Eco Consulting</h3>
-        <p>Expert guidance on sustainable sourcing, waste reduction, and green operations.</p>
-      </div>
+
+      <h3>Eco Boxes</h3>
+
+      <p>
+        Durable recyclable packaging boxes for safe
+        and eco-friendly shipping.
+      </p>
+
     </div>
-  </main>
 
-  <footer>
-    <p>© 2026 MyWebsite</p>
-  </footer>
+    <!-- SERVICE 2 -->
+    <div class="service-card" id="paper-bags">
 
+      <div class="service-icon">
+        🛍️
+      </div>
+
+      <h3>Paper Bags</h3>
+
+      <p>
+        Biodegradable shopping bags designed
+        for sustainable businesses.
+      </p>
+
+    </div>
+
+    <!-- SERVICE 3 -->
+    <div class="service-card" id="branding">
+
+      <div class="service-icon">
+        🎨
+      </div>
+
+      <h3>Custom Branding</h3>
+
+      <p>
+        Personalized eco-friendly packaging designs
+        and brand labeling solutions.
+      </p>
+
+    </div>
+
+    <!-- SERVICE 4 -->
+    <div class="service-card">
+
+      <div class="service-icon">
+        🚚
+      </div>
+
+      <h3>Fast Delivery</h3>
+
+      <p>
+        Quick and sustainable product delivery
+        services worldwide.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     FOOTER SECTION
+========================= -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- COMPANY -->
+    <div class="footer-box">
+
+      <h2>EcoPack</h2>
+
+      <p>
+        EcoPack provides eco-friendly packaging
+        services to support sustainable living
+        and green businesses worldwide.
+      </p>
+
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="footer-box">
+
+      <h3>Quick Links</h3>
+
+      <ul>
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <!-- SERVICES -->
+    <div class="footer-box">
+
+      <h3>Our Services</h3>
+
+      <ul>
+
+        <li>Eco Packaging</li>
+        <li>Paper Bags</li>
+        <li>Custom Branding</li>
+        <li>Reusable Products</li>
+        <li>Fast Delivery</li>
+
+      </ul>
+
+    </div>
+
+    <!-- SOCIAL -->
+    <div class="footer-box">
+
+      <h3>Follow Us</h3>
+
+      <div class="social-icons">
+
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+        <a href="#">🐦</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 EcoPack | Sustainable Packing Supply Store | All Rights Reserved
+    </p>
+
+  </div>
+
+</footer>
 </body>
 </html>
 

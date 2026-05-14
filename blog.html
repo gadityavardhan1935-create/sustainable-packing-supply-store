@@ -3,112 +3,248 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EcoPack Blog</title>
-   <link rel="stylesheet" href="blog.css">
-  <style>
-
-  </style>
-
+  <title>Document</title>
+  <link rel="stylesheet" href="blog.css">
 </head>
-
 <body>
+ <!-- =========================
+     BLOG HEADER SECTION
+========================= -->
 
-  <header>
-  <div class="logo">EcoPack</div>
- 
-<nav>
+<header class="blog-header">
 
-  <div class="dropdown">
-    <a href="#home" class="drop-btn">Home ▾</a>
+  <!-- NAVBAR -->
+  <nav class="navbar">
 
-    <div class="dropdown-content">
-      <a href="#home">Home 1</a>
-      <a href="#home2">Home 2</a>
+    <!-- LOGO -->
+    <div class="logo">
+      EcoPack
     </div>
+
+    <!-- NAV LINKS -->
+    <ul class="nav-links" id="navLinks">
+
+      <li><a href="#home">Home</a></li>
+
+      <li class="dropdown">
+
+        <a href="#">
+          Blog ▼
+        </a>
+
+        <ul class="dropdown-menu">
+
+          <li><a href="#latest">Latest Blogs</a></li>
+          <li><a href="#trending">Trending</a></li>
+          <li><a href="#tips">Eco Tips</a></li>
+
+        </ul>
+
+      </li>
+
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+    <!-- RIGHT SIDE -->
+    <div class="nav-right">
+
+      <!-- DARK MODE -->
+      <button id="themeToggle" class="theme-btn">
+        🌙
+      </button>
+
+      <!-- MOBILE MENU -->
+      <div class="menu-toggle" id="menuToggle">
+        ☰
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- HEADER CONTENT -->
+  <div class="blog-header-content">
+
+    <h1>EcoPack Blog</h1>
+
+    <p>
+      Explore sustainable packaging ideas, eco-friendly innovations,
+      and green business tips for a better future.
+    </p>
+
+    <a href="#blog" class="header-btn">
+      Explore Blogs
+    </a>
+
   </div>
 
-  <a href="#about"><a href="about.html">about</a>
-  <a href="#services"><a href="services.html">Services</a>
-  <a href="#pricing"><a href="pricing.html">pricing</a>
-  <a href="#blog"><a href="blog.html">blog</a>
-  <a href="#contact"><a href="contact.html">contact</a>
-  <a href="#dashboard"><a href="dashboard.html">dashboard</a>
-  <a href="#login"><a href="./login.html">Login</a></a>
-  <a href="#signup"><a href="./signup.html">signup</a></a>
-
-</nav>
 </header>
 
-  <section class="section" id="blog">
+<!-- =========================
+     BLOG SECTION
+========================= -->
 
-    <h2 class="section-title">Latest Blogs</h2>
+<section class="blog-section" id="blog">
 
-    <div class="cards">
+  <div class="section-title">
+    <h2>Latest Blog Posts</h2>
+    <p>
+      Learn more about sustainable packaging and eco-friendly solutions.
+    </p>
+  </div>
 
-      <div class="card blog-card">
+  <div class="blog-container">
 
-        <img src="https://i.pinimg.com/736x/8f/e1/52/8fe1527dd0df6d8e59f1f2cf6e7d1c52.jpg" alt="Eco Packaging" height="100%" width="100%">
+    <!-- BLOG CARD 1 -->
+    <div class="blog-card">
 
-        <div class="blog-content">
+      <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?q=80&w=1200&auto=format&fit=crop" alt="Blog">
 
-          <h3>Top 5 Eco-Friendly Packaging Trends</h3>
+      <div class="blog-content">
 
-          <p>
-            Discover the latest sustainable packaging trends helping businesses reduce waste and protect the environment.
-          </p>
+        <h3>Why Sustainable Packaging Matters</h3>
 
-          <a href="#" class="blog-btn">Read More</a>
+        <p>
+          Discover how eco-friendly packaging reduces environmental pollution.
+        </p>
 
-        </div>
-
-      </div>
-
-      <div class="card blog-card">
-
-        <img src="https://i.pinimg.com/736x/e3/35/13/e33513e0db4f6b2b99e9b9e4c7a2dbf0.jpg" alt="Recyclable Materials">
-
-        <div class="blog-content">
-
-          <h3>Why Recyclable Materials Matter</h3>
-
-          <p>
-            Learn how recyclable packaging materials help reduce pollution and create a greener future.
-          </p>
-
-          <a href="#" class="blog-btn">Read More</a>
-
-        </div>
-
-      </div>
-
-      <div class="card blog-card">
-
-        <img src="https://i.pinimg.com/736x/d5/8f/f8/d58ff8f81dc4d8b8b96e36b5e98b9d6e.jpg" alt="Green Business">
-
-        <div class="blog-content">
-
-          <h3>How Green Packaging Boosts Business</h3>
-
-          <p>
-            Sustainable packaging improves brand image, customer trust, and long-term business growth.
-          </p>
-
-          <a href="#" class="blog-btn">Read More</a>
-
-        </div>
+        <a href="#">Read More</a>
 
       </div>
 
     </div>
 
-  </section>
+    <!-- BLOG CARD 2 -->
+    <div class="blog-card">
 
-  <footer>
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="Blog">
 
-    <p>© 2026 MyWebsite</p>
+      <div class="blog-content">
 
-  </footer>
+        <h3>Top Eco-Friendly Packaging Trends</h3>
 
+        <p>
+          Explore modern biodegradable and recyclable packaging innovations.
+        </p>
+
+        <a href="#">Read More</a>
+
+      </div>
+
+    </div>
+
+    <!-- BLOG CARD 3 -->
+    <div class="blog-card">
+
+      <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop" alt="Blog">
+
+      <div class="blog-content">
+
+        <h3>Reusable Packaging for Businesses</h3>
+
+        <p>
+          Learn how reusable products improve sustainability and reduce waste.
+        </p>
+
+        <a href="#">Read More</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =========================
+     FOOTER SECTION
+========================= -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- COMPANY -->
+    <div class="footer-box">
+
+      <h2>EcoPack</h2>
+
+      <p>
+        EcoPack shares eco-friendly packaging ideas and sustainable business
+        solutions to help create a greener planet.
+      </p>
+
+    </div>
+
+    <!-- LINKS -->
+    <div class="footer-box">
+
+      <h3>Quick Links</h3>
+
+      <ul>
+
+        <li><a href="#home">Home</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+
+    </div>
+
+    <!-- BLOG CATEGORIES -->
+    <div class="footer-box">
+
+      <h3>Blog Categories</h3>
+
+      <ul>
+
+        <li>Eco Packaging</li>
+        <li>Green Business</li>
+        <li>Reusable Products</li>
+        <li>Biodegradable Materials</li>
+        <li>Packaging Trends</li>
+
+      </ul>
+
+    </div>
+
+    <!-- CONTACT -->
+    <div class="footer-box">
+
+      <h3>Contact</h3>
+
+      <p>Email: support@ecopack.com</p>
+      <p>Phone: +91 98765 43210</p>
+      <p>Location: India</p>
+
+      <div class="social-icons">
+
+        <a href="#">🌐</a>
+        <a href="#">📘</a>
+        <a href="#">📸</a>
+        <a href="#">🐦</a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- COPYRIGHT -->
+  <div class="footer-bottom">
+
+    <p>
+      © 2026 EcoPack | Sustainable Packing Supply Store | All Rights Reserved
+    </p>
+
+  </div>
+
+</footer> 
 </body>
 </html>
  
