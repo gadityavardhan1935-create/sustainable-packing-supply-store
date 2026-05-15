@@ -1,116 +1,79 @@
+<!-- login.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Login - EcoPack</title>
   <link rel="stylesheet" href="login.css">
 </head>
 <body>
- <!-- =========================
-     LOGIN HEADER SECTION
-========================= -->
 
-<header class="login-header">
+<!-- ================= LOGIN SECTION ================= -->
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
+<section class="login-section">
 
-    <!-- LOGO -->
-    <div class="logo">
-      EcoPack
-    </div>
+  <!-- LEFT SIDE -->
 
-    <!-- NAV LINKS -->
-    <ul class="nav-links" id="navLinks">
+  <div class="login-left">
 
-      <li><a href="#home">Home</a></li>
+    <div class="overlay"></div>
 
-      <li class="dropdown">
+    <div class="left-content">
 
-        <a href="#">
-          Login ▼
-        </a>
+      <h1>EcoPack</h1>
 
-        <ul class="dropdown-menu">
-
-          <li><a href="#signin">Sign In</a></li>
-          <li><a href="#register">Register</a></li>
-          <li><a href="#support">Support</a></li>
-
-        </ul>
-
-      </li>
-
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-
-    </ul>
-
-    <!-- RIGHT SIDE -->
-    <div class="nav-right">
-
-      <!-- DARK MODE -->
-      <button id="themeToggle" class="theme-btn">
-        🌙
-      </button>
-
-      <!-- MOBILE MENU -->
-      <div class="menu-toggle" id="menuToggle">
-        ☰
-      </div>
+      <p>
+        Sustainable Packing Supply Store for eco-friendly
+        packaging solutions, custom branding, and green business growth.
+      </p>
 
     </div>
-
-  </nav>
-
-  <!-- HEADER CONTENT -->
-  <div class="login-header-content">
-
-    <h1>Welcome Back</h1>
-
-    <p>
-      Login to access your EcoPack dashboard, orders,
-      and sustainable packaging solutions.
-    </p>
-
-    <a href="#login" class="header-btn">
-      Login Now
-    </a>
 
   </div>
 
-</header>
+  <!-- RIGHT SIDE -->
 
-<!-- =========================
-     LOGIN SECTION
-========================= -->
+  <div class="login-right">
 
-<section class="login-section" id="login">
-
-  <div class="login-container">
-
-    <!-- LOGIN FORM -->
     <div class="login-box">
 
-      <h2>User Login</h2>
+      <h2>Welcome Back</h2>
 
-      <form>
+      <p class="subtitle">
+        Login to manage your eco packaging dashboard.
+      </p>
 
-        <input type="email" placeholder="Enter Your Email" required>
+      <form class="login-form">
 
-        <input type="password" placeholder="Enter Password" required>
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" required>
+        </div>
 
-        <button type="submit" class="login-btn">
-          Login
-        </button>
+        <div class="input-box">
+          <label>Password</label>
+          <input type="password" placeholder="Enter your password" required>
+        </div>
+
+        <div class="form-options">
+
+          <label>
+            <input type="checkbox">
+            Remember Me
+          </label>
+
+          <a href="#">Forgot Password?</a>
+
+        </div>
+
+        <button type="submit">Login</button>
 
       </form>
 
-      <p class="login-text">
+      <p class="signup-text">
         Don't have an account?
-        <a href="#">Signup</a>
+        <a href="./signup.html">Signup</a>
       </p>
 
     </div>
@@ -119,86 +82,29 @@
 
 </section>
 
-<!-- =========================
-     FOOTER SECTION
-========================= -->
+<!-- ================= DARK MODE BUTTON ================= -->
 
-<footer class="footer">
+<button id="theme-toggle">🌙</button>
 
-  <div class="footer-container">
+<!-- ================= DARK MODE SCRIPT ================= -->
 
-    <!-- COMPANY -->
-    <div class="footer-box">
+<script>
 
-      <h2>EcoPack</h2>
+const toggleBtn = document.getElementById("theme-toggle");
 
-      <p>
-        EcoPack delivers eco-friendly packaging solutions
-        for businesses and customers worldwide.
-      </p>
+toggleBtn.onclick = () => {
 
-    </div>
+  document.body.classList.toggle("dark-mode");
 
-    <!-- LINKS -->
-    <div class="footer-box">
+  if(document.body.classList.contains("dark-mode")){
+    toggleBtn.innerHTML = "☀️";
+  }else{
+    toggleBtn.innerHTML = "🌙";
+  }
 
-      <h3>Quick Links</h3>
+};
 
-      <ul>
+</script>
 
-        <li><a href="#home">Home</a></li>
-        <li><a href="#login">Login</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-      </ul>
-
-    </div>
-
-    <!-- SERVICES -->
-    <div class="footer-box">
-
-      <h3>Services</h3>
-
-      <ul>
-
-        <li>Eco Packaging</li>
-        <li>Reusable Products</li>
-        <li>Paper Bags</li>
-        <li>Fast Delivery</li>
-        <li>Custom Branding</li>
-
-      </ul>
-
-    </div>
-
-    <!-- SOCIAL -->
-    <div class="footer-box">
-
-      <h3>Follow Us</h3>
-
-      <div class="social-icons">
-
-        <a href="#">🌐</a>
-        <a href="#">📘</a>
-        <a href="#">📸</a>
-        <a href="#">🐦</a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- COPYRIGHT -->
-  <div class="footer-bottom">
-
-    <p>
-      © 2026 EcoPack | Sustainable Packing Supply Store | All Rights Reserved
-    </p>
-
-  </div>
-
-</footer> 
 </body>
 </html>

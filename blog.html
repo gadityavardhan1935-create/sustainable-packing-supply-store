@@ -3,153 +3,202 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="blog.css">
+  <title>Blog - EcoPack</title>
+  <link rel="stylesheet" href="./blog.css">
 </head>
 <body>
- <!-- =========================
-     BLOG HEADER SECTION
-========================= -->
 
-<header class="blog-header">
+<!-- ================= HEADER ================= -->
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
+<header>
+    <nav class="navbar">
+      <div class="logo">EcoPack</div>
 
-    <!-- LOGO -->
-    <div class="logo">
-      EcoPack
-    </div>
+      <ul class="nav-links" id="navLinks">
+        <li class="dropdown">
+          <a href="./home.html">Home <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="./home1.html">Home-1</a></li>
+            <li><a href="home2.html">Home-2</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a>
+        <li><a href="./pricing.html">Pricing</a>
+        <li><a href="./blog.html">Blog</a>
+        <li><a href="./contact.html">Contact</a>
+        <li><a href="./dashboard.html">Dashboard</a>
+        <li><a href="./login.html">Login</a>
+        <li><a href="./signup.html">Signup</a>
+      </ul>
 
-    <!-- NAV LINKS -->
-    <ul class="nav-links" id="navLinks">
-
-      <li><a href="#home">Home</a></li>
-
-      <li class="dropdown">
-
-        <a href="#">
-          Blog ▼
-        </a>
-
-        <ul class="dropdown-menu">
-
-          <li><a href="#latest">Latest Blogs</a></li>
-          <li><a href="#trending">Trending</a></li>
-          <li><a href="#tips">Eco Tips</a></li>
-
-        </ul>
-
-      </li>
-
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-
-    </ul>
-
-    <!-- RIGHT SIDE -->
-    <div class="nav-right">
-
-      <!-- DARK MODE -->
-      <button id="themeToggle" class="theme-btn">
-        🌙
-      </button>
-
-      <!-- MOBILE MENU -->
-      <div class="menu-toggle" id="menuToggle">
-        ☰
+      <div class="nav-icons">
+        <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
+    </nav>
+  </header>
 
-    </div>
+<!-- ================= HERO SECTION ================= -->
 
-  </nav>
+<section class="blog-hero">
 
-  <!-- HEADER CONTENT -->
-  <div class="blog-header-content">
+  <div class="hero-content">
 
-    <h1>EcoPack Blog</h1>
+    <h1>Latest Eco Packaging Blogs</h1>
 
     <p>
-      Explore sustainable packaging ideas, eco-friendly innovations,
-      and green business tips for a better future.
+      Explore sustainability tips, eco-friendly packaging trends,
+      business ideas, and green solutions for modern brands.
     </p>
-
-    <a href="#blog" class="header-btn">
-      Explore Blogs
-    </a>
 
   </div>
 
-</header>
+</section>
 
-<!-- =========================
-     BLOG SECTION
-========================= -->
+<!-- ================= BLOG SECTION ================= -->
 
-<section class="blog-section" id="blog">
+<section class="blog-section">
 
-  <div class="section-title">
-    <h2>Latest Blog Posts</h2>
-    <p>
-      Learn more about sustainable packaging and eco-friendly solutions.
-    </p>
-  </div>
+  <h2 class="section-title">Our Recent Blogs</h2>
 
   <div class="blog-container">
 
     <!-- BLOG CARD 1 -->
+
     <div class="blog-card">
 
-      <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?q=80&w=1200&auto=format&fit=crop" alt="Blog">
+      <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="">
 
       <div class="blog-content">
 
-        <h3>Why Sustainable Packaging Matters</h3>
+        <span>📅 May 15, 2026</span>
+
+        <h3>Why Eco-Friendly Packaging Matters</h3>
 
         <p>
-          Discover how eco-friendly packaging reduces environmental pollution.
+          Learn how sustainable packaging helps businesses reduce waste
+          and protect the environment.
         </p>
 
-        <a href="#">Read More</a>
+        <a href="#" class="blog-btn">Read More</a>
 
       </div>
 
     </div>
 
     <!-- BLOG CARD 2 -->
+
     <div class="blog-card">
 
-      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="Blog">
+      <img src="https://images.unsplash.com/photo-1607082350899-7e105aa886ae?q=80&w=1200&auto=format&fit=crop" alt="">
 
       <div class="blog-content">
 
-        <h3>Top Eco-Friendly Packaging Trends</h3>
+        <span>📅 May 10, 2026</span>
+
+        <h3>Top Packaging Trends for Businesses</h3>
 
         <p>
-          Explore modern biodegradable and recyclable packaging innovations.
+          Discover the latest sustainable packaging trends used by
+          modern eCommerce brands.
         </p>
 
-        <a href="#">Read More</a>
+        <a href="#" class="blog-btn">Read More</a>
 
       </div>
 
     </div>
 
     <!-- BLOG CARD 3 -->
+
     <div class="blog-card">
 
-      <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop" alt="Blog">
+      <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop" alt="">
 
       <div class="blog-content">
 
-        <h3>Reusable Packaging for Businesses</h3>
+        <span>📅 April 28, 2026</span>
+
+        <h3>Benefits of Recyclable Packaging</h3>
 
         <p>
-          Learn how reusable products improve sustainability and reduce waste.
+          Recyclable packaging solutions improve brand value and create
+          a positive customer experience.
         </p>
 
-        <a href="#">Read More</a>
+        <a href="#" class="blog-btn">Read More</a>
+
+      </div>
+
+    </div>
+
+    <!-- BLOG CARD 4 -->
+
+    <div class="blog-card">
+
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop" alt="">
+
+      <div class="blog-content">
+
+        <span>📅 April 20, 2026</span>
+
+        <h3>How Businesses Reduce Plastic Waste</h3>
+
+        <p>
+          Explore practical methods companies use to replace harmful
+          plastics with eco solutions.
+        </p>
+
+        <a href="#" class="blog-btn">Read More</a>
+
+      </div>
+
+    </div>
+
+    <!-- BLOG CARD 5 -->
+
+    <div class="blog-card">
+
+      <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop" alt="">
+
+      <div class="blog-content">
+
+        <span>📅 April 12, 2026</span>
+
+        <h3>Packaging Ideas for Small Businesses</h3>
+
+        <p>
+          Affordable and attractive eco-packaging ideas for startups
+          and online stores.
+        </p>
+
+        <a href="#" class="blog-btn">Read More</a>
+
+      </div>
+
+    </div>
+
+    <!-- BLOG CARD 6 -->
+
+    <div class="blog-card">
+
+      <img src="https://images.unsplash.com/photo-1586880244406-556ebe35f282?q=80&w=1200&auto=format&fit=crop" alt="">
+
+      <div class="blog-content">
+
+        <span>📅 April 05, 2026</span>
+
+        <h3>Custom Packaging Branding Tips</h3>
+
+        <p>
+          Create a strong brand identity using custom eco-friendly
+          packaging and printing.
+        </p>
+
+        <a href="#" class="blog-btn">Read More</a>
 
       </div>
 
@@ -159,94 +208,80 @@
 
 </section>
 
-<!-- =========================
-     FOOTER SECTION
-========================= -->
+<!-- ================= NEWSLETTER ================= -->
 
-<footer class="footer">
+<section class="newsletter-section">
+
+  <h2>Subscribe To Our Newsletter</h2>
+
+  <p>
+    Get the latest sustainable packaging updates and eco business tips.
+  </p>
+
+  <form class="newsletter-form">
+
+    <input type="email" placeholder="Enter Your Email">
+
+    <button type="submit">Subscribe</button>
+
+  </form>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
 
   <div class="footer-container">
 
-    <!-- COMPANY -->
     <div class="footer-box">
-
-      <h2>EcoPack</h2>
-
-      <p>
-        EcoPack shares eco-friendly packaging ideas and sustainable business
-        solutions to help create a greener planet.
-      </p>
-
-    </div>
-
-    <!-- LINKS -->
-    <div class="footer-box">
-
       <h3>Quick Links</h3>
-
-      <ul>
-
-        <li><a href="#home">Home</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-      </ul>
-
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
     </div>
 
-    <!-- BLOG CATEGORIES -->
     <div class="footer-box">
-
-      <h3>Blog Categories</h3>
-
-      <ul>
-
-        <li>Eco Packaging</li>
-        <li>Green Business</li>
-        <li>Reusable Products</li>
-        <li>Biodegradable Materials</li>
-        <li>Packaging Trends</li>
-
-      </ul>
-
+      <h3>Services</h3>
+      <a href="#">Eco Packaging</a>
+      <a href="#">Bulk Orders</a>
+      <a href="#">Custom Printing</a>
+      <a href="#">Fast Delivery</a>
     </div>
 
-    <!-- CONTACT -->
     <div class="footer-box">
-
-      <h3>Contact</h3>
-
-      <p>Email: support@ecopack.com</p>
-      <p>Phone: +91 98765 43210</p>
-      <p>Location: India</p>
-
-      <div class="social-icons">
-
-        <a href="#">🌐</a>
-        <a href="#">📘</a>
-        <a href="#">📸</a>
-        <a href="#">🐦</a>
-
-      </div>
-
+      <h3>Follow Us</h3>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
     </div>
 
   </div>
 
-  <!-- COPYRIGHT -->
-  <div class="footer-bottom">
+  <p class="copyright">
+    © 2026 EcoPack. All Rights Reserved.
+  </p>
 
-    <p>
-      © 2026 EcoPack | Sustainable Packing Supply Store | All Rights Reserved
-    </p>
+</footer>
 
-  </div>
+<!-- ================= DARK MODE SCRIPT ================= -->
+<script>
 
-</footer> 
+const toggleBtn = document.getElementById("theme-toggle");
+
+toggleBtn.onclick = () => {
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    toggleBtn.innerHTML = "☀️";
+  }else{
+    toggleBtn.innerHTML = "🌙";
+  }
+};
+
+</script>
+
 </body>
 </html>
- 
- 
- 

@@ -1,119 +1,90 @@
+<!-- signup.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="signup.css">
+  <title>Signup - EcoPack</title>
+  <link rel="stylesheet" href="./signup.css">
 </head>
 <body>
-<!-- =========================
-     SIGNUP HEADER SECTION
-========================= -->
 
-<header class="signup-header">
+<!-- ================= SIGNUP SECTION ================= -->
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
+<section class="signup-section">
 
-    <!-- LOGO -->
-    <div class="logo">
-      EcoPack
-    </div>
+  <!-- LEFT SIDE -->
 
-    <!-- NAV LINKS -->
-    <ul class="nav-links" id="navLinks">
+  <div class="signup-left">
 
-      <li><a href="#home">Home</a></li>
+    <div class="overlay"></div>
 
-      <!-- SIGNUP DROPDOWN -->
-      <li class="dropdown">
+    <div class="left-content">
 
-        <a href="#">
-          Signup ▼
-        </a>
+      <h1>Join EcoPack</h1>
 
-        <ul class="dropdown-menu">
-
-          <li><a href="#register">Create Account</a></li>
-          <li><a href="#benefits">Benefits</a></li>
-          <li><a href="#support">Support</a></li>
-
-        </ul>
-
-      </li>
-
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-
-    </ul>
-
-    <!-- RIGHT SIDE -->
-    <div class="nav-right">
-
-      <!-- DARK MODE -->
-      <button id="themeToggle" class="theme-btn">
-        🌙
-      </button>
-
-      <!-- MOBILE MENU -->
-      <div class="menu-toggle" id="menuToggle">
-        ☰
-      </div>
+      <p>
+        Create your account and start exploring sustainable
+        packaging solutions for your business growth.
+      </p>
 
     </div>
-
-  </nav>
-
-  <!-- HEADER CONTENT -->
-  <div class="signup-header-content">
-
-    <h1>Create Your EcoPack Account</h1>
-
-    <p>
-      Join EcoPack today and explore eco-friendly
-      packaging solutions for your sustainable business.
-    </p>
-
-    <a href="#signup" class="header-btn">
-      Get Started
-    </a>
 
   </div>
 
-</header>
+  <!-- RIGHT SIDE -->
 
-<!-- =========================
-     SIGNUP SECTION
-========================= -->
+  <div class="signup-right">
 
-<section class="signup-section" id="signup">
-
-  <div class="signup-container">
-
-    <!-- SIGNUP FORM -->
     <div class="signup-box">
 
       <h2>Create Account</h2>
 
-      <form>
+      <p class="subtitle">
+        Signup to access your eco packaging dashboard.
+      </p>
 
-        <input type="text" placeholder="Full Name" required>
+      <form class="signup-form">
 
-        <input type="email" placeholder="Email Address" required>
+        <div class="input-box">
+          <label>Full Name</label>
+          <input type="text" placeholder="Enter your name" required>
+        </div>
 
-        <input type="password" placeholder="Create Password" required>
+        <div class="input-box">
+          <label>Email Address</label>
+          <input type="email" placeholder="Enter your email" required>
+        </div>
 
-        <input type="password" placeholder="Confirm Password" required>
+        <div class="input-box">
+          <label>Phone Number</label>
+          <input type="tel" placeholder="Enter your phone number" required>
+        </div>
 
-        <button type="submit" class="signup-btn">
-          Signup
-        </button>
+        <div class="input-box">
+          <label>Password</label>
+          <input type="password" placeholder="Create password" required>
+        </div>
+
+        <div class="input-box">
+          <label>Confirm Password</label>
+          <input type="password" placeholder="Confirm password" required>
+        </div>
+
+        <div class="terms">
+
+          <label>
+            <input type="checkbox" required>
+            I agree to the Terms & Conditions
+          </label>
+
+        </div>
+
+        <button type="submit">Create Account</button>
 
       </form>
 
-      <p class="signup-text">
+      <p class="login-text">
         Already have an account?
         <a href="#">Login</a>
       </p>
@@ -124,86 +95,29 @@
 
 </section>
 
-<!-- =========================
-     FOOTER SECTION
-========================= -->
+<!-- ================= DARK MODE BUTTON ================= -->
 
-<footer class="footer">
+<button id="theme-toggle">🌙</button>
 
-  <div class="footer-container">
+<!-- ================= DARK MODE SCRIPT ================= -->
 
-    <!-- COMPANY -->
-    <div class="footer-box">
+<script>
 
-      <h2>EcoPack</h2>
+const toggleBtn = document.getElementById("theme-toggle");
 
-      <p>
-        EcoPack offers sustainable and eco-friendly
-        packaging products for businesses worldwide.
-      </p>
+toggleBtn.onclick = () => {
 
-    </div>
+  document.body.classList.toggle("dark-mode");
 
-    <!-- QUICK LINKS -->
-    <div class="footer-box">
+  if(document.body.classList.contains("dark-mode")){
+    toggleBtn.innerHTML = "☀️";
+  }else{
+    toggleBtn.innerHTML = "🌙";
+  }
 
-      <h3>Quick Links</h3>
+};
 
-      <ul>
+</script>
 
-        <li><a href="#home">Home</a></li>
-        <li><a href="#signup">Signup</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-      </ul>
-
-    </div>
-
-    <!-- FEATURES -->
-    <div class="footer-box">
-
-      <h3>Signup Benefits</h3>
-
-      <ul>
-
-        <li>Eco Products</li>
-        <li>Order Tracking</li>
-        <li>Fast Delivery</li>
-        <li>Customer Support</li>
-        <li>Exclusive Offers</li>
-
-      </ul>
-
-    </div>
-
-    <!-- SOCIAL -->
-    <div class="footer-box">
-
-      <h3>Follow Us</h3>
-
-      <div class="social-icons">
-
-        <a href="#">🌐</a>
-        <a href="#">📘</a>
-        <a href="#">📸</a>
-        <a href="#">🐦</a>
-
-      </div>
-
-    </div>
-
-  </div>
-
-  <!-- COPYRIGHT -->
-  <div class="footer-bottom">
-
-    <p>
-      © 2026 EcoPack | Sustainable Packing Supply Store | All Rights Reserved
-    </p>
-
-  </div>
-
-</footer>
 </body>
 </html>

@@ -1,253 +1,213 @@
+<!-- dashboard.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="dashboard.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - EcoPack</title>
+  <link rel="stylesheet" href="./dashboard.css">
 </head>
 <body>
 
-<!-- =========================
-     DASHBOARD HEADER SECTION
-========================= -->
+<!-- ================= SIDEBAR ================= -->
 
-<header class="dashboard-header">
+<div class="sidebar">
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
+  <div class="logo">
+    EcoPack
+  </div>
 
-    <!-- LOGO -->
-    <div class="logo">
-      EcoPack
+  <ul class="sidebar-menu">
+
+    <li><a href="#">🏠 Dashboard</a></li>
+    <li><a href="#">📦 Orders</a></li>
+    <li><a href="#">🛒 Products</a></li>
+    <li><a href="#">👥 Customers</a></li>
+    <li><a href="#">📊 Analytics</a></li>
+    <li><a href="#">💳 Payments</a></li>
+    <li><a href="#">⚙ Settings</a></li>
+    <li><a href="#">🚪 Logout</a></li>
+
+  </ul>
+
+</div>
+
+<!-- ================= MAIN CONTENT ================= -->
+
+<div class="main-content">
+
+  <!-- TOPBAR -->
+
+  <header class="topbar">
+
+    <div class="search-box">
+      <input type="text" placeholder="Search here...">
     </div>
 
-    <!-- NAV LINKS -->
-    <ul class="nav-links" id="navLinks">
+    <div class="topbar-right">
 
-      <li><a href="#home">Home</a></li>
+      <button id="theme-toggle">🌙</button>
 
-      <!-- DASHBOARD DROPDOWN -->
-      <li class="dropdown">
-
-        <a href="#">
-          Dashboard ▼
-        </a>
-
-        <ul class="dropdown-menu">
-
-          <li><a href="#orders">Orders</a></li>
-          <li><a href="#customers">Customers</a></li>
-          <li><a href="#analytics">Analytics</a></li>
-
-        </ul>
-
-      </li>
-
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-
-    </ul>
-
-    <!-- RIGHT SIDE -->
-    <div class="nav-right">
-
-      <!-- DARK MODE -->
-      <button id="themeToggle" class="theme-btn">
-        🌙
-      </button>
-
-      <!-- MOBILE MENU -->
-      <div class="menu-toggle" id="menuToggle">
-        ☰
+      <div class="admin-profile">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+        <span>Admin</span>
       </div>
 
     </div>
 
-  </nav>
+  </header>
 
-  <!-- HEADER CONTENT -->
-  <div class="dashboard-header-content">
+  <!-- DASHBOARD TITLE -->
+
+  <section class="dashboard-title">
 
     <h1>EcoPack Dashboard</h1>
 
     <p>
-      Monitor orders, customers, revenue,
-      and sustainable packaging performance.
+      Manage sustainable packaging products, customer orders,
+      analytics, and inventory from one place.
     </p>
 
-    <a href="#dashboard" class="header-btn">
-      View Dashboard
-    </a>
+  </section>
 
-  </div>
+  <!-- ================= CARDS ================= -->
 
-</header>
+  <section class="dashboard-cards">
 
-<!-- =========================
-     DASHBOARD SECTION
-========================= -->
+    <div class="card">
+      <h2>1,250</h2>
+      <p>Total Orders</p>
+    </div>
 
-<section class="dashboard-section" id="dashboard">
+    <div class="card">
+      <h2>850</h2>
+      <p>Customers</p>
+    </div>
 
-  <div class="section-title">
+    <div class="card">
+      <h2>320</h2>
+      <p>Products</p>
+    </div>
 
-    <h2>Dashboard Overview</h2>
+    <div class="card">
+      <h2>₹1.5L</h2>
+      <p>Total Revenue</p>
+    </div>
 
-    <p>
-      Real-time insights for your eco-friendly packaging business.
-    </p>
+  </section>
 
-  </div>
+  <!-- ================= RECENT ORDERS ================= -->
 
-  <div class="dashboard-container">
+  <section class="orders-section">
 
-    <!-- CARD 1 -->
-    <div class="dashboard-card" id="orders">
+    <h2>Recent Orders</h2>
 
-      <div class="dashboard-icon">
-        📦
+    <div class="table-container">
+
+      <table>
+
+        <thead>
+
+          <tr>
+            <th>Order ID</th>
+            <th>Customer</th>
+            <th>Product</th>
+            <th>Status</th>
+            <th>Amount</th>
+          </tr>
+
+        </thead>
+
+        <tbody>
+
+          <tr>
+            <td>#1001</td>
+            <td>John</td>
+            <td>Eco Paper Bags</td>
+            <td><span class="status completed">Completed</span></td>
+            <td>₹2,500</td>
+          </tr>
+
+          <tr>
+            <td>#1002</td>
+            <td>Emma</td>
+            <td>Kraft Boxes</td>
+            <td><span class="status pending">Pending</span></td>
+            <td>₹4,000</td>
+          </tr>
+
+          <tr>
+            <td>#1003</td>
+            <td>David</td>
+            <td>Custom Packaging</td>
+            <td><span class="status processing">Processing</span></td>
+            <td>₹6,500</td>
+          </tr>
+
+          <tr>
+            <td>#1004</td>
+            <td>Sophia</td>
+            <td>Reusable Containers</td>
+            <td><span class="status completed">Completed</span></td>
+            <td>₹3,200</td>
+          </tr>
+
+        </tbody>
+
+      </table>
+
+    </div>
+
+  </section>
+
+  <!-- ================= ANALYTICS ================= -->
+
+  <section class="analytics-section">
+
+    <h2>Business Analytics</h2>
+
+    <div class="analytics-container">
+
+      <div class="analytics-box">
+        <h3>📈 Sales Growth</h3>
+        <p>+25% this month</p>
       </div>
 
-      <h3>Total Orders</h3>
-
-      <h1>1,240</h1>
-
-      <p>Orders completed successfully.</p>
-
-    </div>
-
-    <!-- CARD 2 -->
-    <div class="dashboard-card" id="customers">
-
-      <div class="dashboard-icon">
-        👥
+      <div class="analytics-box">
+        <h3>🌱 Eco Products</h3>
+        <p>80% recyclable product sales</p>
       </div>
 
-      <h3>Customers</h3>
-
-      <h1>980</h1>
-
-      <p>Happy eco-conscious customers.</p>
-
-    </div>
-
-    <!-- CARD 3 -->
-    <div class="dashboard-card" id="analytics">
-
-      <div class="dashboard-icon">
-        📊
-      </div>
-
-      <h3>Revenue</h3>
-
-      <h1>$12K</h1>
-
-      <p>Monthly sustainable sales growth.</p>
-
-    </div>
-
-    <!-- CARD 4 -->
-    <div class="dashboard-card">
-
-      <div class="dashboard-icon">
-        🌱
-      </div>
-
-      <h3>Eco Impact</h3>
-
-      <h1>85%</h1>
-
-      <p>Plastic waste reduction achieved.</p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- =========================
-     FOOTER SECTION
-========================= -->
-
-<footer class="footer">
-
-  <div class="footer-container">
-
-    <!-- COMPANY -->
-    <div class="footer-box">
-
-      <h2>EcoPack</h2>
-
-      <p>
-        EcoPack helps businesses manage sustainable
-        packaging operations with smart eco solutions.
-      </p>
-
-    </div>
-
-    <!-- QUICK LINKS -->
-    <div class="footer-box">
-
-      <h3>Quick Links</h3>
-
-      <ul>
-
-        <li><a href="#home">Home</a></li>
-        <li><a href="#dashboard">Dashboard</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-      </ul>
-
-    </div>
-
-    <!-- DASHBOARD FEATURES -->
-    <div class="footer-box">
-
-      <h3>Dashboard Features</h3>
-
-      <ul>
-
-        <li>Order Tracking</li>
-        <li>Customer Analytics</li>
-        <li>Revenue Reports</li>
-        <li>Eco Insights</li>
-        <li>24/7 Monitoring</li>
-
-      </ul>
-
-    </div>
-
-    <!-- SOCIAL -->
-    <div class="footer-box">
-
-      <h3>Follow Us</h3>
-
-      <div class="social-icons">
-
-        <a href="#">🌐</a>
-        <a href="#">📘</a>
-        <a href="#">📸</a>
-        <a href="#">🐦</a>
-
+      <div class="analytics-box">
+        <h3>🚚 Deliveries</h3>
+        <p>95% on-time delivery rate</p>
       </div>
 
     </div>
 
-  </div>
+  </section>
 
-  <!-- COPYRIGHT -->
-  <div class="footer-bottom">
+</div>
 
-    <p>
-      © 2026 EcoPack | Sustainable Packing Supply Store | All Rights Reserved
-    </p>
+<!-- ================= DARK MODE SCRIPT ================= -->
 
-  </div>
+<script>
 
-</footer>
+const toggleBtn = document.getElementById("theme-toggle");
+
+toggleBtn.onclick = () => {
+
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    toggleBtn.innerHTML = "☀️";
+  }else{
+    toggleBtn.innerHTML = "🌙";
+  }
+
+};
+
+</script>
 
 </body>
 </html>

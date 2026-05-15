@@ -1,142 +1,119 @@
+<!-- contact.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="contact.css">
+  <title>Contact Us - EcoPack</title>
+  <link rel="stylesheet" href="./contact.css">
 </head>
 <body>
-<!-- =========================
-     CONTACT HEADER SECTION
-========================= -->
 
-<header class="contact-header">
+<!-- ================= HEADER ================= -->
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
+<header>
+    <nav class="navbar">
+      <div class="logo">EcoPack</div>
 
-    <!-- LOGO -->
-    <div class="logo">
-      EcoPack
-    </div>
+      <ul class="nav-links" id="navLinks">
+        <li class="dropdown">
+          <a href="#">Home <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="./home1.html">Home-1</a></li>
+            <li><a href="home2">Home-2</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./pricing.html">Pricing</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./dashboard.html">Dashboard</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
 
-    <!-- NAV LINKS -->
-    <ul class="nav-links" id="navLinks">
-
-      <li><a href="#home">Home</a></li>
-
-      <li class="dropdown">
-
-        <a href="#">
-          Contact ▼
-        </a>
-
-        <ul class="dropdown-menu">
-
-          <li><a href="#support">Support</a></li>
-          <li><a href="#location">Location</a></li>
-          <li><a href="#help">Help Center</a></li>
-
-        </ul>
-
-      </li>
-
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#blog">Blog</a></li>
-
-    </ul>
-
-    <!-- RIGHT SIDE -->
-    <div class="nav-right">
-
-      <!-- DARK MODE -->
-      <button id="themeToggle" class="theme-btn">
-        🌙
-      </button>
-
-      <!-- MOBILE MENU -->
-      <div class="menu-toggle" id="menuToggle">
-        ☰
+      <div class="nav-icons">
+        <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
+    </nav>
+  </header>
 
-    </div>
+<!-- ================= HERO SECTION ================= -->
 
-  </nav>
+<section class="contact-hero">
 
-  <!-- HEADER CONTENT -->
-  <div class="contact-header-content">
+  <div class="hero-content">
 
     <h1>Contact EcoPack</h1>
 
     <p>
-      Reach out to us for sustainable packaging solutions,
-      support, and eco-friendly business services.
-    </p>
-
-    <a href="#contact" class="header-btn">
-      Contact Us
-    </a>
-
-  </div>
-
-</header>
-
-<!-- =========================
-     CONTACT SECTION
-========================= -->
-
-<section class="contact-section" id="contact">
-
-  <div class="section-title">
-
-    <h2>Get In Touch</h2>
-
-    <p>
-      We'd love to hear from you and help your business go green.
+      Reach out to us for eco-friendly packaging solutions,
+      bulk orders, custom branding, and business support.
     </p>
 
   </div>
+
+</section>
+
+<!-- ================= CONTACT SECTION ================= -->
+
+<section class="contact-section">
 
   <div class="contact-container">
 
-    <!-- CONTACT FORM -->
-    <div class="contact-form">
+    <!-- CONTACT INFO -->
 
-      <form>
+    <div class="contact-info">
+
+      <h2>Get In Touch</h2>
+
+      <p>
+        We are always ready to help businesses switch to
+        sustainable packaging solutions.
+      </p>
+
+      <div class="info-box">
+        <h3>📍 Address</h3>
+        <p>EcoPack Street, Green City, India</p>
+      </div>
+
+      <div class="info-box">
+        <h3>📞 Phone</h3>
+        <p>+91 98765 43210</p>
+      </div>
+
+      <div class="info-box">
+        <h3>📧 Email</h3>
+        <p>support@ecopack.com</p>
+      </div>
+
+      <div class="info-box">
+        <h3>🕒 Working Hours</h3>
+        <p>Monday - Saturday : 9AM - 7PM</p>
+      </div>
+
+    </div>
+
+    <!-- CONTACT FORM -->
+
+    <div class="contact-form-box">
+
+      <form class="contact-form">
 
         <input type="text" placeholder="Your Name" required>
 
         <input type="email" placeholder="Your Email" required>
 
-        <input type="text" placeholder="Subject">
+        <input type="text" placeholder="Subject" required>
 
         <textarea rows="6" placeholder="Your Message"></textarea>
 
-        <button type="submit" class="contact-btn">
-          Send Message
-        </button>
+        <button type="submit">Send Message</button>
 
       </form>
-
-    </div>
-
-    <!-- CONTACT INFO -->
-    <div class="contact-info">
-
-      <h3>Contact Information</h3>
-
-      <p>📧 support@ecopack.com</p>
-
-      <p>📞 +91 98765 43210</p>
-
-      <p>📍 India</p>
-
-      <p>
-        EcoPack provides sustainable packing supply solutions
-        for eco-friendly businesses and customers worldwide.
-      </p>
 
     </div>
 
@@ -144,87 +121,80 @@
 
 </section>
 
-<!-- =========================
-     FOOTER SECTION
-========================= -->
+<!-- ================= MAP SECTION ================= -->
 
-<footer class="footer">
+<section class="map-section">
+
+  <h2 class="section-title">Our Location</h2>
+
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30451.678229855865!2d78.486671!3d17.385044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99c5f4f7e8f5%3A0x2f8e8e9b4b4b4b4b!2sHyderabad!5e0!3m2!1sen!2sin!4v1690000000000!5m2!1sen!2sin"
+    width="100%" 
+    height="400" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy">
+  </iframe>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
 
   <div class="footer-container">
 
-    <!-- COMPANY -->
     <div class="footer-box">
-
-      <h2>EcoPack</h2>
-
-      <p>
-        EcoPack delivers eco-friendly packaging solutions
-        designed to reduce waste and build a sustainable future.
-      </p>
-
-    </div>
-
-    <!-- LINKS -->
-    <div class="footer-box">
-
       <h3>Quick Links</h3>
-
-      <ul>
-
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-      </ul>
-
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
     </div>
 
-    <!-- SERVICES -->
     <div class="footer-box">
-
       <h3>Services</h3>
-
-      <ul>
-
-        <li>Eco Packaging</li>
-        <li>Reusable Products</li>
-        <li>Paper Bags</li>
-        <li>Custom Branding</li>
-        <li>Fast Delivery</li>
-
-      </ul>
-
+      <a href="#">Eco Packaging</a>
+      <a href="#">Bulk Orders</a>
+      <a href="#">Custom Printing</a>
+      <a href="#">Fast Delivery</a>
     </div>
 
-    <!-- SOCIAL -->
     <div class="footer-box">
-
       <h3>Follow Us</h3>
-
-      <div class="social-icons">
-
-        <a href="#">🌐</a>
-        <a href="#">📘</a>
-        <a href="#">📸</a>
-        <a href="#">🐦</a>
-
-      </div>
-
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
     </div>
 
   </div>
 
-  <!-- COPYRIGHT -->
-  <div class="footer-bottom">
+  <p class="copyright">
+    © 2026 EcoPack. All Rights Reserved.
+  </p>
 
-    <p>
-      © 2026 EcoPack | Sustainable Packing Supply Store | All Rights Reserved
-    </p>
+</footer>
 
-  </div>
+<!-- ================= DARK MODE SCRIPT ================= -->
 
-</footer> 
+<script>
+
+const toggleBtn = document.getElementById("theme-toggle");
+
+toggleBtn.onclick = () => {
+
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    toggleBtn.innerHTML = "☀️";
+  }else{
+    toggleBtn.innerHTML = "🌙";
+  }
+
+};
+
+</script>
+
 </body>
 </html>

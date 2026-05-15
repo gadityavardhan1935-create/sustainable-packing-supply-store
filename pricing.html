@@ -1,171 +1,129 @@
+<!-- pricing.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-    <link rel="stylesheet" href="pricing.css">
+  <title>Pricing - EcoPack</title>
+  <link rel="stylesheet" href="./pricing.css">
 </head>
 <body>
-<!-- =========================
-     PRICING HEADER SECTION
-========================= -->
 
-<header class="pricing-header">
+<!-- ================= HEADER ================= -->
 
-  <!-- NAVBAR -->
-  <nav class="navbar">
+<header>
+    <nav class="navbar">
+      <div class="logo">EcoPack</div>
 
-    <!-- LOGO -->
-    <div class="logo">
-      EcoPack
-    </div>
+      <ul class="nav-links" id="navLinks">
+        <li class="dropdown">
+          <a href="./home.html">Home<i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="./home.html">Home 1</a></li>
+            <li><a href="./home.html">Home 2</a></li>
+          </ul>
+        </li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./services.html">Services</a></li>
+        <li><a href="./pricing.html">Pricing</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><a href="./dashboard.html">Dashboard</a></li>
+        <li><a href="./login.html">Login</a></li>
+      </ul>
 
-    <!-- NAV LINKS -->
-    <ul class="nav-links" id="navLinks">
-
-      <li><a href="#home">Home</a></li>
-
-      <!-- PRICING DROPDOWN -->
-      <li class="dropdown">
-
-        <a href="#">
-          Pricing ▼
-        </a>
-
-        <ul class="dropdown-menu">
-
-          <li><a href="#starter">Starter Plan</a></li>
-          <li><a href="#business">Business Plan</a></li>
-          <li><a href="#enterprise">Enterprise Plan</a></li>
-
-        </ul>
-
-      </li>
-
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-
-    </ul>
-
-    <!-- RIGHT SIDE -->
-    <div class="nav-right">
-
-      <!-- DARK MODE -->
-      <button id="themeToggle" class="theme-btn">
-        🌙
-      </button>
-
-      <!-- MOBILE MENU -->
-      <div class="menu-toggle" id="menuToggle">
-        ☰
+      <div class="nav-icons">
+        <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
+    </nav>
+  </header>
 
-    </div>
+<!-- ================= HERO SECTION ================= -->
 
-  </nav>
+<section class="pricing-hero">
 
-  <!-- HEADER CONTENT -->
-  <div class="pricing-header-content">
+  <div class="hero-content">
 
     <h1>Affordable Pricing Plans</h1>
 
     <p>
-      Choose the best sustainable packaging plan
-      for your eco-friendly business needs.
-    </p>
-
-    <a href="#pricing" class="header-btn">
-      View Plans
-    </a>
-
-  </div>
-
-</header>
-
-<!-- =========================
-     PRICING SECTION
-========================= -->
-
-<section class="pricing-section" id="pricing">
-
-  <div class="section-title">
-
-    <h2>Our Pricing Plans</h2>
-
-    <p>
-      Flexible and eco-friendly packaging solutions
-      for businesses of all sizes.
+      Choose eco-friendly packaging plans for startups,
+      online businesses, restaurants, and enterprises.
     </p>
 
   </div>
+
+</section>
+
+<!-- ================= PRICING SECTION ================= -->
+
+<section class="pricing-section">
+
+  <h2 class="section-title">Our Pricing Plans</h2>
 
   <div class="pricing-container">
 
-    <!-- STARTER -->
-    <div class="price-card" id="starter">
+    <!-- BASIC PLAN -->
 
-      <h3>Starter</h3>
+    <div class="pricing-card">
 
-      <h1>$19</h1>
+      <h3>Basic</h3>
+
+      <div class="price">₹999<span>/month</span></div>
 
       <ul>
-
-        <li>Eco Packaging</li>
-        <li>Paper Bags</li>
-        <li>Email Support</li>
-        <li>Basic Delivery</li>
-
+        <li>✔ Eco Paper Bags</li>
+        <li>✔ Small Bulk Orders</li>
+        <li>✔ Email Support</li>
+        <li>✔ Basic Packaging</li>
       </ul>
 
-      <button class="price-btn">
-        Choose Plan
-      </button>
+      <a href="#" class="pricing-btn">Choose Plan</a>
 
     </div>
 
-    <!-- BUSINESS -->
-    <div class="price-card active" id="business">
+    <!-- STANDARD PLAN -->
 
-      <h3>Business</h3>
+    <div class="pricing-card popular">
 
-      <h1>$49</h1>
+      <div class="popular-tag">Most Popular</div>
+
+      <h3>Standard</h3>
+
+      <div class="price">₹2499<span>/month</span></div>
 
       <ul>
-
-        <li>Custom Branding</li>
-        <li>Bulk Orders</li>
-        <li>Priority Support</li>
-        <li>Fast Delivery</li>
-
+        <li>✔ Recyclable Boxes</li>
+        <li>✔ Medium Bulk Orders</li>
+        <li>✔ Custom Printing</li>
+        <li>✔ Priority Support</li>
+        <li>✔ Fast Delivery</li>
       </ul>
 
-      <button class="price-btn">
-        Choose Plan
-      </button>
+      <a href="#" class="pricing-btn">Choose Plan</a>
 
     </div>
 
-    <!-- ENTERPRISE -->
-    <div class="price-card" id="enterprise">
+    <!-- PREMIUM PLAN -->
 
-      <h3>Enterprise</h3>
+    <div class="pricing-card">
 
-      <h1>$99</h1>
+      <h3>Premium</h3>
+
+      <div class="price">₹4999<span>/month</span></div>
 
       <ul>
-
-        <li>All Features</li>
-        <li>24/7 Support</li>
-        <li>Dedicated Team</li>
-        <li>Unlimited Orders</li>
-
+        <li>✔ Premium Eco Packaging</li>
+        <li>✔ Unlimited Bulk Orders</li>
+        <li>✔ Full Branding Support</li>
+        <li>✔ Dedicated Manager</li>
+        <li>✔ 24/7 Support</li>
       </ul>
 
-      <button class="price-btn">
-        Choose Plan
-      </button>
+      <a href="#" class="pricing-btn">Choose Plan</a>
 
     </div>
 
@@ -173,86 +131,92 @@
 
 </section>
 
-<!-- =========================
-     FOOTER SECTION
-========================= -->
+<!-- ================= FEATURES SECTION ================= -->
 
-<footer class="footer">
+<section class="features-section">
+
+  <h2 class="section-title">Why Our Pricing?</h2>
+
+  <div class="features-container">
+
+    <div class="feature-box">
+      <h3>🌱 Sustainable Materials</h3>
+      <p>Environment-friendly packaging products for every business.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>📦 Premium Quality</h3>
+      <p>Durable and high-quality packaging at affordable rates.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>🚚 Fast Shipping</h3>
+      <p>Quick and secure delivery for all customer orders.</p>
+    </div>
+
+    <div class="feature-box">
+      <h3>💰 Budget Friendly</h3>
+      <p>Flexible plans suitable for startups and enterprises.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
 
   <div class="footer-container">
 
-    <!-- COMPANY -->
     <div class="footer-box">
-
-      <h2>EcoPack</h2>
-
-      <p>
-        EcoPack offers affordable and sustainable
-        packaging solutions for businesses worldwide.
-      </p>
-
-    </div>
-
-    <!-- QUICK LINKS -->
-    <div class="footer-box">
-
       <h3>Quick Links</h3>
-
-      <ul>
-
-        <li><a href="#home">Home</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-      </ul>
-
+      <a href="#"Home></a>
+      <a href="#"About></a>
+      <a href="#"Services></a>
+      <a href="#"Contact></a>
     </div>
 
-    <!-- PRICING FEATURES -->
     <div class="footer-box">
-
-      <h3>Pricing Features</h3>
-
-      <ul>
-
-        <li>Eco Products</li>
-        <li>Custom Branding</li>
-        <li>Bulk Orders</li>
-        <li>Fast Shipping</li>
-        <li>24/7 Support</li>
-
-      </ul>
-
+      <h3>Services</h3>
+      <a href="#"Eco Packaging></a>
+      <a href="#"Bulk Orders></a>
+      <a href="#"Custom Printing></a>
+      <a href=Fast Delivery></a>
     </div>
 
-    <!-- SOCIAL -->
     <div class="footer-box">
-
       <h3>Follow Us</h3>
-
-      <div class="social-icons">
-
-        <a href="#">🌐</a>
-        <a href="#">📘</a>
-        <a href="#">📸</a>
-        <a href="#">🐦</a>
-
-      </div>
-
+      <a href="#"Facebook></a>
+      <a href="#"Instagram></a>
+      <a href="#"LinkedIn></a>
+      <a href="#"Twitter></a>
     </div>
 
   </div>
 
-  <!-- COPYRIGHT -->
-  <div class="footer-bottom">
+  <p class="copyright">
+    © 2026 EcoPack. All Rights Reserved.
+  </p>
 
-    <p>
-      © 2026 EcoPack | Sustainable Packing Supply Store | All Rights Reserved
-    </p>
+</footer>
 
-  </div>
+<!-- ================= DARK MODE SCRIPT ================= -->
+<script>
 
-</footer> 
+const toggleBtn = document.getElementById("theme-toggle");
+
+toggleBtn.onclick = () => {
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    toggleBtn.innerHTML = "☀️";
+  }else{
+    toggleBtn.innerHTML = "🌙";
+  }
+};
+
+</script>
+
 </body>
 </html>

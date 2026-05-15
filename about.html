@@ -1,306 +1,184 @@
+<!-- about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="about.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Sustainable Packing Supply Store</title>
+  <link rel="stylesheet" href="about.css">
 </head>
 <body>
-<!-- ABOUT PAGE HEADER SECTION -->
+<!-- ================= HEADER ================= -->
+ <header>
+    <nav class="navbar">
+      <div class="logo">EcoPack</div>
 
-<header class="about-header">
-
-  <!-- NAVBAR -->
-  <nav class="navbar">
-
-    <div class="logo">
-      EcoPack
-    </div>
-
-    <ul class="nav-links">
-
-      <li><a href="#home">Home</a></li>
-
-      <li class="dropdown">
-
-        <a href="#">
-          About ▼
-        </a>
-
-        <ul class="dropdown-menu">
-          <li><a href="#company">Company</a></li>
-          <li><a href="#mission">Mission</a></li>
-          <li><a href="#team">Our Team</a></li>
-        </ul>
-
-      </li>
-
-      <li><a href="#services">Services</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#blog">Blog</a></li>
-      <li><a href="#contact">Contact</a></li>
-
-    </ul>
-
-    <!-- DARK MODE BUTTON -->
-    <button id="themeToggle" class="theme-btn">
-      🌙
-    </button>
-
-    <!-- MOBILE MENU -->
-    <div class="menu-toggle" id="menuToggle">
-      ☰
-    </div>
-
-  </nav>
-
-  <!-- HEADER CONTENT -->
-  <div class="about-header-content">
-
-    <h1>About EcoPack</h1>
-
-    <p>
-      Sustainable packing solutions designed to protect the environment
-      and create a greener future.
-    </p>
-
-    <a href="#about" class="header-btn">
-      Learn More
-    </a>
-
-  </div>
-
-</header>
- <!-- =========================
-     NAVBAR SECTION
-========================= -->
-
-<nav class="navbar">
-
-  <!-- LOGO -->
-  <div class="logo">
-    EcoPack
-  </div>
-
-  <!-- NAVIGATION LINKS -->
-  <ul class="nav-links" id="navLinks">
-
-    <li>
-      <a href="#home">Home</a>
-    </li>
-
-    <!-- ABOUT DROPDOWN -->
-    <li class="dropdown">
-
-      <a href="#about">
-        About ▼
-      </a>
-
-      <ul class="dropdown-menu">
-
-        <li>
-          <a href="#company">Company</a>
+      <ul class="nav-links" id="navLinks">
+        <li class="dropdown">
+          <a href="./home.html">Home <i class="fa-solid fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="./home1.html">Home-1</a></li>
+            <li><a href="home2.html">Home-2</a></li>
+          </ul>
         </li>
-
-        <li>
-          <a href="#mission">Mission</a>
-        </li>
-
-        <li>
-          <a href="#vision">Vision</a>
-        </li>
-
+        <li><a href="about.html">About</a>
+        <li><a href="services.html">Services</a>
+        <li><a href="pricing.html">Pricing</a>
+        <li><a href="blog.html">Blog</a>
+        <li><a href="contact.html">Contact</a>
+        <li><a href="dashboard.html">Dashboard</a>
+        <li><a href="login">Login</a>
+        <li><a href="signup.html">Signup</a>
       </ul>
 
-    </li>
+      <div class="nav-icons">
+        <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <li>
-      <a href="#services">Services</a>
-    </li>
-
-    <li>
-      <a href="#pricing">Pricing</a>
-    </li>
-
-    <li>
-      <a href="#blog">Blog</a>
-    </li>
-
-    <li>
-      <a href="#contact">Contact</a>
-    </li>
-
-  </ul>
-
-  <!-- RIGHT SIDE -->
-  <div class="nav-right">
-
-    <!-- DARK MODE BUTTON -->
-    <button id="themeToggle" class="theme-btn">
-      🌙
-    </button>
-
-    <!-- MOBILE MENU ICON -->
-    <div class="menu-toggle" id="menuToggle">
-      ☰
-    </div>
-
-  </div>
-
-</nav>   
-<!-- ABOUT SECTION -->
-<section class="about" id="about">
-
-  <div class="section-title">
-    <h2>About Us</h2>
+<!-- ================= ABOUT HERO ================= -->
+<section class="about-hero">
+  <div class="about-content">
+    <h1>About EcoPack</h1>
     <p>
-      Delivering sustainable and eco-friendly packaging solutions for a greener future.
+      We provide sustainable, reusable, and eco-friendly packaging
+      solutions for businesses and individuals. Our mission is to
+      reduce plastic waste and build a greener future.
     </p>
   </div>
+</section>
 
-  <div class="about-container">
+<!-- ================= ABOUT SECTION ================= -->
+<section class="about-section">
 
-    <!-- IMAGE -->
-    <div class="about-image">
-      <img 
-        src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" 
-        alt="Sustainable Packaging">
-    </div>
+  <div class="about-image">
+    <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="Eco Packaging">
+  </div>
 
-    <!-- CONTENT -->
-    <div class="about-content">
+  <div class="about-text">
+    <h2>Who We Are</h2>
 
-      <h3>Eco-Friendly Packaging Solutions</h3>
+    <p>
+      EcoPack is a trusted sustainable packing supply store focused on
+      environmentally responsible packaging materials. We help brands
+      switch from harmful plastics to recyclable and biodegradable
+      alternatives.
+    </p>
 
-      <p>
-        EcoPack is a sustainable packing supply store focused on reducing
-        plastic waste by providing recyclable, reusable, and biodegradable
-        packaging products for businesses and individuals.
-      </p>
+    <p>
+      Our products include paper bags, compostable wraps, kraft boxes,
+      reusable containers, and eco shipping supplies designed for
+      modern businesses.
+    </p>
 
-      <p>
-        Our mission is to protect the environment through innovative and
-        affordable green packaging solutions that support sustainability
-        and eco-conscious living.
-      </p>
+    <div class="features">
 
-      <!-- FEATURES -->
-      <div class="about-features">
-
-        <div class="feature-card">
-          <i class="fa-solid fa-recycle"></i>
-          <h4>100% Recyclable</h4>
-          <p>Eco-friendly materials that help reduce pollution.</p>
-        </div>
-
-        <div class="feature-card">
-          <i class="fa-solid fa-leaf"></i>
-          <h4>Biodegradable</h4>
-          <p>Safe packaging products made from natural resources.</p>
-        </div>
-
-        <div class="feature-card">
-          <i class="fa-solid fa-earth-asia"></i>
-          <h4>Global Impact</h4>
-          <p>Supporting businesses in building a greener future.</p>
-        </div>
-
+      <div class="feature-box">
+        <h3>🌱 Eco Friendly</h3>
+        <p>100% recyclable and biodegradable materials.</p>
       </div>
 
-      <button class="about-btn">Learn More</button>
+      <div class="feature-box">
+        <h3>📦 Quality Products</h3>
+        <p>Strong, durable, and premium packaging solutions.</p>
+      </div>
+
+      <div class="feature-box">
+        <h3>🚚 Fast Delivery</h3>
+        <p>Quick and secure delivery services worldwide.</p>
+      </div>
 
     </div>
   </div>
-</section>
- <!-- =========================
-     FOOTER SECTION
-========================= -->
 
-<footer class="footer">
+</section>
+
+<!-- ================= TEAM SECTION ================= -->
+<section class="team-section">
+
+  <h2 class="section-title">Our Team</h2>
+
+  <div class="team-container">
+
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team">
+      <h3>David Green</h3>
+      <p>Founder & CEO</p>
+    </div>
+
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team">
+      <h3>Emma Watson</h3>
+      <p>Marketing Manager</p>
+    </div>
+
+    <div class="team-card">
+      <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Team">
+      <h3>John Carter</h3>
+      <p>Operations Head</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
 
   <div class="footer-container">
 
-    <!-- COMPANY INFO -->
     <div class="footer-box">
-
-      <h2>EcoPack</h2>
-
-      <p>
-        EcoPack provides sustainable and eco-friendly packing solutions
-        for businesses and individuals. Our mission is to reduce plastic
-        waste and create a greener future.
-      </p>
-
-    </div>
-
-    <!-- QUICK LINKS -->
-    <div class="footer-box">
-
       <h3>Quick Links</h3>
-
-      <ul>
-
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-
-      </ul>
-
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
     </div>
 
-    <!-- SERVICES -->
     <div class="footer-box">
-
-      <h3>Our Services</h3>
-
-      <ul>
-
-        <li>Eco Packaging</li>
-        <li>Paper Bags</li>
-        <li>Custom Branding</li>
-        <li>Reusable Products</li>
-        <li>Fast Delivery</li>
-
-      </ul>
-
+      <h3>Services</h3>
+      <a href="#">Eco Packaging</a>
+      <a href="#">Bulk Orders</a>
+      <a href="#">Custom Printing</a>
+      <a href="#">Fast Delivery</a>
     </div>
 
-    <!-- CONTACT -->
     <div class="footer-box">
-
-      <h3>Contact Info</h3>
-
-      <p>Email: support@ecopack.com</p>
-      <p>Phone: +91 98765 43210</p>
-      <p>Location: India</p>
-
-      <!-- SOCIAL ICONS -->
-      <div class="social-icons">
-
-        <a href="#">🌐</a>
-        <a href="#">📘</a>
-        <a href="#">📸</a>
-        <a href="#">🐦</a>
-
-      </div>
-
+      <h3>Follow Us</h3>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Twitter</a>
     </div>
 
   </div>
 
-  <!-- COPYRIGHT -->
-  <div class="footer-bottom">
+  <p class="copyright">
+    © 2026 EcoPack. All Rights Reserved.
+  </p>
 
-    <p>
-      © 2026 EcoPack | Sustainable Packing Supply Store | All Rights Reserved
-    </p>
+</footer>
 
-  </div>
+<!-- ================= DARK MODE SCRIPT ================= -->
+<script>
 
-</footer>   
+const toggleBtn = document.getElementById("theme-toggle");
+
+toggleBtn.onclick = () => {
+  document.body.classList.toggle("dark-mode");
+
+  if(document.body.classList.contains("dark-mode")){
+    toggleBtn.innerHTML = "☀️";
+  }else{
+    toggleBtn.innerHTML = "🌙";
+  }
+};
+
+</script>
+
 </body>
 </html>
