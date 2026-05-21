@@ -1,372 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>EcoPack - Sustainable Packing Supply Store</title>
-  <link rel="stylesheet" href="./home.css">
+  <title>EcoPack - Home Pages</title>
+  <link rel="stylesheet" href="./home.css"/>
+  
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+
+  </style>
+
 </head>
+
 <body>
 
-  <!-- HEADER -->
+  <!-- ================================================= -->
+  <!-- ================= HOME PAGE 1 =================== -->
+  <!-- ================================================= -->
+
   <header>
     <nav class="navbar">
       <div class="logo">EcoPack</div>
 
-      <ul class="nav-links" id="navLinks">
-        <li class="dropdown">
-          <a href="#">Home <i class="fa-solid fa-caret-down"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="./home1.html">Home-1</a></li>
-            <li><a href="home2">Home-2</a></li>
-          </ul>
-        </li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./services.html">Services</a></li>
-        <li><a href="./pricing.html">Pricing</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./dashboard.html">Dashboard</a></li>
-        <li><a href="./login.html">Login</a></li>
-         <button id="rtl-toggle">RTL</button>
-      </ul>
+      <ul class="nav-links">
+        <div class="dropdown">
+          <a href="#home" class="drop-btn">
+            Home ▾
+          </a>
 
-      <div class="nav-icons">
-        <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
-        <div class="menu-toggle" id="menuToggle">
-          <i class="fa-solid fa-bars"></i>
-          <!-- RTL TOGGLE BUTTON -->
-
+          <div class="dropdown-content">
+            <a href="./home-2.html">Home 1</a>
+            <a href="#home2">Home 2</a>
+          </div>
+        </div>  
           
-        </div>
-      </div>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./dashboard.html">dashboard</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./signup.html">Signup</a></li>
+      </ul>
+      
+      <!-- ================= RTL + DARK/LIGHT MODE BUTTONS ================= -->
+
+<div class="theme-controls">
+
+    <!-- DARK MODE -->
+    <button id="themeToggle">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <!-- RTL MODE -->  
+    <button id="rtlToggle">
+        RTL
+    </button>
+
+</div>
+      <button class="nav-btn">Get Started</button>
     </nav>
   </header>
 
-  <!-- HOME 1 -->
-  <section class="hero" id="home1">
+  <section class="hero">
     <div class="hero-content">
-      <h1>Eco-Friendly Packaging Solutions</h1>
+      <h1>Sustainable Packaging For Modern Businesses</h1>
+
       <p>
-        Sustainable packing products designed for businesses and individuals.
+        Eco-friendly packaging solutions with premium quality and smart delivery systems.
       </p>
-      <a href="#services" class="btn">Explore Services</a>
-    </div>
-  </section>
 
-  <!-- HOME 2 -->
-  <section class="home2" id="home2">
-    <div class="home2-content">
-      <div class="home2-text">
-        <h2>Smart & Green Packaging</h2>
-        <p>
-          We provide recyclable boxes, compostable bags, paper wraps, and
-          eco-friendly shipping solutions.
-        </p>
-        <button class="btn">Shop Now</button>
-      </div>
-      <div class="home2-image">
-        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop" alt="Eco Packaging">
+      <div class="hero-buttons">
+        <button>Explore More</button>
+        <button class="outline-btn">Our Services</button>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
+  <section class="features">
+
     <div class="section-title">
-      <h2>About Us</h2>
+      <h2>Our Features</h2>
+      <p>Eco-friendly packaging solutions for every business.</p>
     </div>
 
-    <div class="about-container">
-      <div class="about-image">
-        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop" alt="About">
+    <div class="feature-container">
+
+      <div class="feature-card">
+        <i class="fa-solid fa-leaf"></i>
+        <h3>Eco Friendly</h3>
+        <p>100% biodegradable packaging products.</p>
       </div>
 
-      <div class="about-text">
-        <h3>Building a Sustainable Future</h3>
-        <p>
-          EcoPack is dedicated to reducing plastic waste through sustainable
-          and reusable packing supplies.
-        </p>
-
-        <div class="about-cards">
-          <div class="about-card">
-            <i class="fa-solid fa-leaf"></i>
-            <h4>Eco Materials</h4>
-          </div>
-
-          <div class="about-card">
-            <i class="fa-solid fa-recycle"></i>
-            <h4>100% Recyclable</h4>
-          </div>
-
-          <div class="about-card">
-            <i class="fa-solid fa-earth-asia"></i>
-            <h4>Global Impact</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="services" id="services">
-    <div class="section-title">
-      <h2>Services</h2>
-    </div>
-
-    <div class="service-container">
-      <div class="service-card">
+      <div class="feature-card">
         <i class="fa-solid fa-box"></i>
-        <h3>Eco Boxes</h3>
-        <p>Durable recyclable boxes for shipping and packaging.</p>
+        <h3>Premium Quality</h3>
+        <p>Strong and durable packaging materials.</p>
       </div>
 
-      <div class="service-card">
-        <i class="fa-solid fa-bag-shopping"></i>
-        <h3>Paper Bags</h3>
-        <p>Biodegradable shopping bags for sustainable businesses.</p>
-      </div>
-
-      <div class="service-card">
-        <i class="fa-solid fa-truck"></i>
+      <div class="feature-card">
+        <i class="fa-solid fa-truck-fast"></i>
         <h3>Fast Delivery</h3>
-        <p>Quick and eco-conscious shipping services worldwide.</p>
+        <p>Worldwide shipping with secure handling.</p>
       </div>
 
-      <div class="service-card">
-        <i class="fa-solid fa-tags"></i>
-        <h3>Custom Branding</h3>
-        <p>Personalized eco labels and packaging designs.</p>
-      </div>
     </div>
+
   </section>
 
-  <!-- PRICING -->
-  <section class="pricing" id="pricing">
+  <section class="products">
+
     <div class="section-title">
-      <h2>Pricing Plans</h2>
+      <h2>Featured Products</h2>
+      <p>Explore our best eco packaging products.</p>
     </div>
 
-    <div class="pricing-container">
-      <div class="price-card">
-        <h3>Starter</h3>
-        <h1>$19</h1>
-        <ul>
-          <li>Eco Packaging</li>
-          <li>Paper Bags</li>
-          <li>Basic Support</li>
-        </ul>
-        <button class="btn">Choose Plan</button>
-      </div>
+    <div class="product-container">
 
-      <div class="price-card active">
-        <h3>Business</h3>
-        <h1>$49</h1>
-        <ul>
-          <li>Custom Branding</li>
-          <li>Bulk Orders</li>
-          <li>Priority Support</li>
-        </ul>
-        <button class="btn">Choose Plan</button>
-      </div>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1586075010923-2dd4570fb338?auto=format&fit=crop&w=800&q=80">
 
-      <div class="price-card">
-        <h3>Enterprise</h3>
-        <h1>$99</h1>
-        <ul>
-          <li>All Features</li>
-          <li>Dedicated Team</li>
-          <li>24/7 Support</li>
-        </ul>
-        <button class="btn">Choose Plan</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- BLOG -->
-  <section class="blog" id="blog">
-    <div class="section-title">
-      <h2>Latest Blogs</h2>
-    </div>
-
-    <div class="blog-container">
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?q=80&w=1200&auto=format&fit=crop" alt="Blog">
-        <div class="blog-content">
-          <h3>Why Sustainable Packaging Matters</h3>
-          <p>Learn how eco packaging reduces pollution.</p>
-          <a href="#">Read More</a>
+        <div class="product-info">
+          <h3>Paper Bags</h3>
+          <p>$25.00</p>
+          <button>Buy Now</button>
         </div>
       </div>
 
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="Blog">
-        <div class="blog-content">
-          <h3>Top Eco-Friendly Packaging Trends</h3>
-          <p>Discover the latest innovations in green packaging.</p>
-          <a href="#">Read More</a>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1607082349566-187342175e2f?auto=format&fit=crop&w=800&q=80">
+
+        <div class="product-info">
+          <h3>Eco Boxes</h3>
+          <p>$40.00</p>
+          <button>Buy Now</button>
         </div>
       </div>
 
-      <div class="blog-card">
-        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?q=80&w=1200&auto=format&fit=crop" alt="Blog">
-        <div class="blog-content">
-          <h3>Reusable Packaging for Businesses</h3>
-          <p>Improve sustainability with reusable products.</p>
-          <a href="#">Read More</a>
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?auto=format&fit=crop&w=800&q=80">
+
+        <div class="product-info">
+          <h3>Food Containers</h3>
+          <p>$30.00</p>
+          <button>Buy Now</button>
         </div>
       </div>
+
     </div>
+
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact" id="contact">
-    <div class="section-title">
-      <h2>Contact Us</h2>
-    </div>
+  <!-- ================= FOOTER ================= -->
 
-    <div class="contact-container">
-      <form>
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea rows="6" placeholder="Your Message"></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-    </div>
-  </section>
+  <footer class="footer">
 
-  <!-- DASHBOARD -->
-  <section class="dashboard" id="dashboard">
-    <div class="section-title">
-      <h2>Dashboard</h2>
-    </div>
+    <div class="footer-container">
 
-    <div class="dashboard-container">
-      <div class="dashboard-card">
-        <h3>Total Orders</h3>
-        <h1>1,240</h1>
+      <div class="footer-box">
+        <h3>EcoPack</h3>
+
+        <p>
+          Eco-friendly packaging solutions for modern businesses and sustainable future.
+        </p>
+
+        <div class="footer-social">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
       </div>
 
-      <div class="dashboard-card">
-        <h3>Products Sold</h3>
-        <h1>5,320</h1>
+      <div class="footer-box footer-links">
+        <h3>Quick Links</h3> 
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./blog.html">Products</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./dashboard.html">dashboard</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./signup.html">Signup</a></li>
+        
       </div>
 
-      <div class="dashboard-card">
-        <h3>Customers</h3>
-        <h1>980</h1>
+      <div class="footer-box">
+        <h3>Contact Info</h3>
+
+        <p>Email: info@ecopack.com</p>
+        <p>Phone: +91 9876543210</p>
+        <p>Location: India</p>
       </div>
 
-      <div class="dashboard-card">
-        <h3>Revenue</h3>
-        <h1>$12K</h1>
-      </div>
-    </div>
-  </section>
-
-  <!-- LOGIN -->
-  <section class="auth-section" id="login">
-    <div class="auth-box">
-      <h2>Login</h2>
-      <form>
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <button class="btn">Login</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- SIGNUP -->
-  <section class="auth-section" id="signup">
-    <div class="auth-box">
-      <h2>Signup</h2>
-      <form>
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email">
-        <input type="password" placeholder="Password">
-        <button class="btn">Create Account</button>
-      </form>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-<footer>
-
-  <div class="footer-container">
-
-    <div class="footer-box">
-      <h3>Quick Links</h3>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
     </div>
 
-    <div class="footer-box">
-      <h3>Services</h3>
-      <a href="#">Eco Packaging</a>
-      <a href="#">Bulk Orders</a>
-      <a href="#">Custom Printing</a>
-      <a href="#">Fast Delivery</a>
+    <div class="footer-bottom">
+      <p>© 2026 EcoPack. All Rights Reserved.</p>
     </div>
 
-    <div class="footer-box">
-      <h3>Follow Us</h3>
-      <a href="#">Facebook</a>
-      <a href="#">Instagram</a>
-      <a href="#">LinkedIn</a>
-      <a href="#">Twitter</a>
-    </div>
-
-  </div>
-
-  <p class="copyright">
-    © 2026 EcoPack. All Rights Reserved.
-  </p>
-
-</footer>
-
-<!-- ================= DARK MODE SCRIPT ================= -->
-<script>
-  const rtlBtn = document.getElementById("rtl-toggle");
-
-rtlBtn.onclick = () => {
-
-  if(document.body.classList.contains("rtl-mode")){
-
-    document.body.classList.remove("rtl-mode");
-    document.body.dir = "ltr";
-
-    rtlBtn.innerHTML = "RTL";
-
-  }else{
-
-    document.body.classList.add("rtl-mode");
-    document.body.dir = "rtl";
-
-    rtlBtn.innerHTML = "LTR";
-
-  }
-
-};
-
-const toggleBtn = document.getElementById("theme-toggle");
-
-toggleBtn.onclick = () => {
-  document.body.classList.toggle("dark-mode");
-
-  if(document.body.classList.contains("dark-mode")){
-    toggleBtn.innerHTML = "☀️";
-  }else{
-    toggleBtn.innerHTML = "🌙";
-  }
-};
-
-
-
-</script>
-
-</body>
-</html>  
-
+  </footer>

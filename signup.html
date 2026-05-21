@@ -1,123 +1,171 @@
-<!-- signup.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Signup - EcoPack</title>
-  <link rel="stylesheet" href="./signup.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoPack Signup</title>
+
+    <link rel="stylesheet" href="./signup.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
 
-<!-- ================= SIGNUP SECTION ================= -->
+    <!-- ================= SIGNUP SECTION ================= -->
 
-<section class="signup-section">
+    <section class="signup-section">
 
-  <!-- LEFT SIDE -->
+        <div class="signup-container">
 
-  <div class="signup-left">
+            <!-- LEFT SIDE -->
 
-    <div class="overlay"></div>
+            <div class="signup-left">
 
-    <div class="left-content">
+                <div class="overlay"></div>
 
-      <h1>Join EcoPack</h1>
+                <div class="left-content">
 
-      <p>
-        Create your account and start exploring sustainable
-        packaging solutions for your business growth.
-      </p>
+                    <h1>Join EcoPack Today</h1>
 
-    </div>
+                    <p>
+                        Create your account and start managing sustainable packaging solutions easily.
+                    </p>
 
-  </div>
+                    <div class="social-icons">
 
-  <!-- RIGHT SIDE -->
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
 
-  <div class="signup-right">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
 
-    <div class="signup-box">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
 
-      <h2>Create Account</h2>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
 
-      <p class="subtitle">
-        Signup to access your eco packaging dashboard.
-      </p>
+                    </div>
 
-      <form class="signup-form">
+                </div>
 
-        <div class="input-box">
-          <label>Full Name</label>
-          <input type="text" placeholder="Enter your name" required>
+            </div>
+
+            <!-- RIGHT SIDE -->
+
+            <div class="signup-right">
+
+                <div class="form-box">
+
+                    <h2>Create Account</h2>
+
+                    <p>
+                        Register now to access EcoPack services and dashboard.
+                    </p>
+
+                    <form>
+
+                        <!-- FULL NAME -->
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-user"></i>
+
+                            <input type="text" placeholder="Full Name" required>
+
+                        </div>
+
+                        <!-- EMAIL -->
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <input type="email" placeholder="Email Address" required>
+
+                        </div>
+
+                        <!-- PHONE -->
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <input type="tel" placeholder="Phone Number" required>
+
+                        </div>
+
+                        <!-- PASSWORD -->
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input type="password" placeholder="Create Password" required>
+
+                        </div>
+
+                        <!-- CONFIRM PASSWORD -->
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-key"></i>
+
+                            <input type="password" placeholder="Confirm Password" required>
+
+                        </div>
+
+                        <!-- TERMS -->
+
+                        <div class="terms">
+
+                            <label>
+
+                                <input type="checkbox" required>
+
+                                I agree to the Terms & Conditions
+
+                            </label>
+
+                        </div>
+
+                        <!-- BUTTON -->
+
+                        <button type="submit" class="signup-btn">
+
+                            Create Account
+
+                        </button>
+
+                    </form>
+
+                    <!-- LOGIN LINK -->
+
+                    <div class="login-link">
+
+                        <p>
+                            Already have an account?
+                            <a href="#">Login Now</a>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="input-box">
-          <label>Email Address</label>
-          <input type="email" placeholder="Enter your email" required>
-        </div>
-
-        <div class="input-box">
-          <label>Phone Number</label>
-          <input type="tel" placeholder="Enter your phone number" required>
-        </div>
-
-        <div class="input-box">
-          <label>Password</label>
-          <input type="password" placeholder="Create password" required>
-        </div>
-
-        <div class="input-box">
-          <label>Confirm Password</label>
-          <input type="password" placeholder="Confirm password" required>
-        </div>
-
-        <div class="terms">
-
-          <label>
-            <input type="checkbox" required>
-            I agree to the Terms & Conditions
-          </label>
-
-        </div>
-
-        <button type="submit">Create Account</button>
-
-      </form>
-
-      <p class="login-text">
-        Already have an account?
-        <a href="#">Login</a>
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<!-- ================= DARK MODE BUTTON ================= -->
-
-<button id="theme-toggle">🌙</button>
-
-<!-- ================= DARK MODE SCRIPT ================= -->
-
-<script>
-
-const toggleBtn = document.getElementById("theme-toggle");
-
-toggleBtn.onclick = () => {
-
-  document.body.classList.toggle("dark-mode");
-
-  if(document.body.classList.contains("dark-mode")){
-    toggleBtn.innerHTML = "☀️";
-  }else{
-    toggleBtn.innerHTML = "🌙";
-  }
-
-};
-
-</script>
+    </section>
 
 </body>
+
 </html>

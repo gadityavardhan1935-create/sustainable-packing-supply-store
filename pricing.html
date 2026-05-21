@@ -11,35 +11,25 @@
 
 <!-- ================= HEADER ================= -->
 
-<header>
-    <nav class="navbar">
-      <div class="logo">EcoPack</div>
+    <header>
+  <nav class="navbar">
+    <div class="logo">EcoPack</div>
 
-      <ul class="nav-links" id="navLinks">
-        <li class="dropdown">
-          <a href="./home.html">Home<i class="fa-solid fa-caret-down"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="./home.html">Home 1</a></li>
-            <li><a href="./home.html">Home 2</a></li>
-          </ul>
-        </li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./services.html">Services</a></li>
-        <li><a href="./pricing.html">Pricing</a></li>
-        <li><a href="./blog.html">Blog</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-        <li><a href="./dashboard.html">Dashboard</a></li>
-        <li><a href="./login.html">Login</a></li>
-      </ul>
+    <ul class="nav-links">
+     
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./dashboard.html">dashboard</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./signup.html">Signup</a></li>
+    </ul>
 
-      <div class="nav-icons">
-        <button id="themeToggle"><i class="fa-solid fa-moon"></i></button>
-        <div class="menu-toggle" id="menuToggle">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      </div>
-    </nav>
-  </header>
+    <button class="nav-btn">Get Started</button>
+  </nav>
+</header>
 
 <!-- ================= HERO SECTION ================= -->
 
@@ -165,58 +155,51 @@
 
 <!-- ================= FOOTER ================= -->
 
-<footer>
+<footer class="footer">
 
   <div class="footer-container">
 
     <div class="footer-box">
+      <h3>EcoPack</h3>
+
+      <p>
+        Eco-friendly packaging solutions for modern businesses and sustainable future.
+      </p>
+
+      <div class="footer-social">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin-in"></i>
+      </div>
+    </div>
+
+    <div class="footer-box footer-links">
       <h3>Quick Links</h3>
-      <a href="#"Home></a>
-      <a href="#"About></a>
-      <a href="#"Services></a>
-      <a href="#"Contact></a>
+
+     
+      <li><a href="./about.html">About</a></li>
+          <li><a href="./services.html">Services</a></li>
+          <li><a href="./blog.html">Blog</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./pricing.html">Pricing</a></li>
+          <li><a href="./dashboard.html">dashboard</a></li>
+          <li><a href="./login.html">Login</a></li>
+          <li><a href="./signup.html">Signup</a></li>
     </div>
 
     <div class="footer-box">
-      <h3>Services</h3>
-      <a href="#"Eco Packaging></a>
-      <a href="#"Bulk Orders></a>
-      <a href="#"Custom Printing></a>
-      <a href=Fast Delivery></a>
-    </div>
+      <h3>Contact Info</h3>
 
-    <div class="footer-box">
-      <h3>Follow Us</h3>
-      <a href="#"Facebook></a>
-      <a href="#"Instagram></a>
-      <a href="#"LinkedIn></a>
-      <a href="#"Twitter></a>
+      <p>Email: info@ecopack.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Location: India</p>
     </div>
 
   </div>
 
-  <p class="copyright">
-    © 2026 EcoPack. All Rights Reserved.
-  </p>
+  <div class="footer-bottom">
+    <p>© 2026 EcoPack. All Rights Reserved.</p>
+  </div>
 
 </footer>
-
-<!-- ================= DARK MODE SCRIPT ================= -->
-<script>
-
-const toggleBtn = document.getElementById("theme-toggle");
-
-toggleBtn.onclick = () => {
-  document.body.classList.toggle("dark-mode");
-
-  if(document.body.classList.contains("dark-mode")){
-    toggleBtn.innerHTML = "☀️";
-  }else{
-    toggleBtn.innerHTML = "🌙";
-  }
-};
-
-</script>
-
-</body>
-</html>

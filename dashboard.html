@@ -1,213 +1,388 @@
-<!-- dashboard.html -->
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard - EcoPack</title>
-  <link rel="stylesheet" href="./dashboard.css">
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EcoPack Dashboard</title>
+
+    <link rel="stylesheet" href="./dashboard.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
 
-<!-- ================= SIDEBAR ================= -->
+    <!-- ================= SIDEBAR ================= -->
 
-<div class="sidebar">
+    <aside class="sidebar">
 
-  <div class="logo">
-    EcoPack
-  </div>
+        <div class="logo">
 
-  <ul class="sidebar-menu">
+            <i class="fa-solid fa-leaf"></i> EcoPack
 
-    <li><a href="#">🏠 Dashboard</a></li>
-    <li><a href="#">📦 Orders</a></li>
-    <li><a href="#">🛒 Products</a></li>
-    <li><a href="#">👥 Customers</a></li>
-    <li><a href="#">📊 Analytics</a></li>
-    <li><a href="#">💳 Payments</a></li>
-    <li><a href="#">⚙ Settings</a></li>
-    <li><a href="#">🚪 Logout</a></li>
+        </div>
 
-  </ul>
+        <ul class="menu">
 
-</div>
+            <li class="active">
+                <a href="#">
+                    <i class="fa-solid fa-chart-line"></i> Dashboard
+                </a>
+            </li>
 
-<!-- ================= MAIN CONTENT ================= -->
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-box"></i> Products
+                </a>
+            </li>
 
-<div class="main-content">
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i> Orders
+                </a>
+            </li>
 
-  <!-- TOPBAR -->
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-users"></i> Customers
+                </a>
+            </li>
 
-  <header class="topbar">
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-truck-fast"></i> Delivery
+                </a>
+            </li>
 
-    <div class="search-box">
-      <input type="text" placeholder="Search here...">
-    </div>
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i> Settings
+                </a>
+            </li>
 
-    <div class="topbar-right">
+        </ul>
 
-      <button id="theme-toggle">🌙</button>
+    </aside>
 
-      <div class="admin-profile">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
-        <span>Admin</span>
-      </div>
+    <!-- ================= MAIN CONTENT ================= -->
 
-    </div>
+    <main class="main-content">
 
-  </header>
+        <!-- TOP BAR -->
 
-  <!-- DASHBOARD TITLE -->
+        <div class="topbar">
 
-  <section class="dashboard-title">
+            <div class="search-box">
 
-    <h1>EcoPack Dashboard</h1>
+                <input type="text" placeholder="Search here...">
 
-    <p>
-      Manage sustainable packaging products, customer orders,
-      analytics, and inventory from one place.
-    </p>
+                <i class="fa-solid fa-magnifying-glass"></i>
 
-  </section>
+            </div>
 
-  <!-- ================= CARDS ================= -->
+            <div class="top-icons">
 
-  <section class="dashboard-cards">
+                <i class="fa-solid fa-bell"></i>
 
-    <div class="card">
-      <h2>1,250</h2>
-      <p>Total Orders</p>
-    </div>
+                <i class="fa-solid fa-envelope"></i>
 
-    <div class="card">
-      <h2>850</h2>
-      <p>Customers</p>
-    </div>
+                <div class="profile">
 
-    <div class="card">
-      <h2>320</h2>
-      <p>Products</p>
-    </div>
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg">
 
-    <div class="card">
-      <h2>₹1.5L</h2>
-      <p>Total Revenue</p>
-    </div>
+                    <span>Admin</span>
 
-  </section>
+                </div>
 
-  <!-- ================= RECENT ORDERS ================= -->
+            </div>
 
-  <section class="orders-section">
+        </div>
 
-    <h2>Recent Orders</h2>
+        <!-- ================= DASHBOARD CARDS ================= -->
 
-    <div class="table-container">
+        <section class="dashboard-cards">
 
-      <table>
+            <!-- CARD 1 -->
 
-        <thead>
+            <div class="card">
 
-          <tr>
-            <th>Order ID</th>
-            <th>Customer</th>
-            <th>Product</th>
-            <th>Status</th>
-            <th>Amount</th>
-          </tr>
+                <div class="card-icon green">
 
-        </thead>
+                    <i class="fa-solid fa-box"></i>
 
-        <tbody>
+                </div>
 
-          <tr>
-            <td>#1001</td>
-            <td>John</td>
-            <td>Eco Paper Bags</td>
-            <td><span class="status completed">Completed</span></td>
-            <td>₹2,500</td>
-          </tr>
+                <div>
 
-          <tr>
-            <td>#1002</td>
-            <td>Emma</td>
-            <td>Kraft Boxes</td>
-            <td><span class="status pending">Pending</span></td>
-            <td>₹4,000</td>
-          </tr>
+                    <h2>1,250</h2>
 
-          <tr>
-            <td>#1003</td>
-            <td>David</td>
-            <td>Custom Packaging</td>
-            <td><span class="status processing">Processing</span></td>
-            <td>₹6,500</td>
-          </tr>
+                    <p>Total Products</p>
 
-          <tr>
-            <td>#1004</td>
-            <td>Sophia</td>
-            <td>Reusable Containers</td>
-            <td><span class="status completed">Completed</span></td>
-            <td>₹3,200</td>
-          </tr>
+                </div>
 
-        </tbody>
+            </div>
 
-      </table>
+            <!-- CARD 2 -->
 
-    </div>
+            <div class="card">
 
-  </section>
+                <div class="card-icon blue">
 
-  <!-- ================= ANALYTICS ================= -->
+                    <i class="fa-solid fa-cart-shopping"></i>
 
-  <section class="analytics-section">
+                </div>
 
-    <h2>Business Analytics</h2>
+                <div>
 
-    <div class="analytics-container">
+                    <h2>850</h2>
 
-      <div class="analytics-box">
-        <h3>📈 Sales Growth</h3>
-        <p>+25% this month</p>
-      </div>
+                    <p>Total Orders</p>
 
-      <div class="analytics-box">
-        <h3>🌱 Eco Products</h3>
-        <p>80% recyclable product sales</p>
-      </div>
+                </div>
 
-      <div class="analytics-box">
-        <h3>🚚 Deliveries</h3>
-        <p>95% on-time delivery rate</p>
-      </div>
+            </div>
 
-    </div>
+            <!-- CARD 3 -->
 
-  </section>
+            <div class="card">
 
-</div>
+                <div class="card-icon orange">
 
-<!-- ================= DARK MODE SCRIPT ================= -->
+                    <i class="fa-solid fa-users"></i>
 
-<script>
+                </div>
 
-const toggleBtn = document.getElementById("theme-toggle");
+                <div>
 
-toggleBtn.onclick = () => {
+                    <h2>540</h2>
 
-  document.body.classList.toggle("dark-mode");
+                    <p>Customers</p>
 
-  if(document.body.classList.contains("dark-mode")){
-    toggleBtn.innerHTML = "☀️";
-  }else{
-    toggleBtn.innerHTML = "🌙";
-  }
+                </div>
 
-};
+            </div>
 
-</script>
+            <!-- CARD 4 -->
+
+            <div class="card">
+
+                <div class="card-icon red">
+
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+
+                </div>
+
+                <div>
+
+                    <h2>₹2.5L</h2>
+
+                    <p>Total Revenue</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ================= RECENT ORDERS ================= -->
+
+        <section class="table-section">
+
+            <div class="section-header">
+
+                <h2>Recent Orders</h2>
+
+                <button>View All</button>
+
+            </div>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Order ID</th>
+
+                            <th>Customer</th>
+
+                            <th>Product</th>
+
+                            <th>Status</th>
+
+                            <th>Price</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>#ECO102</td>
+
+                            <td>John Smith</td>
+
+                            <td>Paper Bags</td>
+
+                            <td><span class="status delivered">Delivered</span></td>
+
+                            <td>₹2,500</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>#ECO103</td>
+
+                            <td>Emma Watson</td>
+
+                            <td>Eco Boxes</td>
+
+                            <td><span class="status pending">Pending</span></td>
+
+                            <td>₹4,000</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>#ECO104</td>
+
+                            <td>David Miller</td>
+
+                            <td>Food Containers</td>
+
+                            <td><span class="status processing">Processing</span></td>
+
+                            <td>₹3,200</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>#ECO105</td>
+
+                            <td>Sophia Lee</td>
+
+                            <td>Custom Packaging</td>
+
+                            <td><span class="status delivered">Delivered</span></td>
+
+                            <td>₹5,500</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- ================= ANALYTICS ================= -->
+
+        <section class="analytics-section">
+
+            <div class="analytics-card">
+
+                <h3>Monthly Sales</h3>
+
+                <div class="progress-bar">
+
+                    <div class="progress"></div>
+
+                </div>
+
+                <span>75% Growth</span>
+
+            </div>
+
+            <div class="analytics-card">
+
+                <h3>Customer Satisfaction</h3>
+
+                <div class="progress-bar">
+
+                    <div class="progress progress2"></div>
+
+                </div>
+
+                <span>90% Positive Reviews</span>
+
+            </div>
+
+        </section>
+
+        <!-- ================= TEAM SECTION ================= -->
+
+        <section class="team-section">
+
+            <div class="section-header">
+
+                <h2>Team Members</h2>
+
+            </div>
+
+            <div class="team-container">
+
+                <!-- MEMBER 1 -->
+
+                <div class="team-card">
+
+                    <img src="https://randomuser.me/api/portraits/men/45.jpg">
+
+                    <h3>John Smith</h3>
+
+                    <p>CEO Founder</p>
+
+                </div>
+
+                <!-- MEMBER 2 -->
+
+                <div class="team-card">
+
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+                    <h3>Emma Watson</h3>
+
+                    <p>Marketing Head</p>
+
+                </div>
+
+                <!-- MEMBER 3 -->
+
+                <div class="team-card">
+
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+                    <h3>David Miller</h3>
+
+                    <p>Designer</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
 
 </body>
+
 </html>
